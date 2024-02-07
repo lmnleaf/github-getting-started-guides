@@ -115,38 +115,37 @@
   <br>
   
   - <details>
-    <summary>SSO & SCIM: Set up SSO at the organization level.</summary>
+    <summary>Set up SSO at the organization level.</summary>
     <br>
     
     - _Note:_ Setting up SSO at the enterprise level can be done but is NOT recommended.
     - _Rationale:_
-      - SCIM requires SSO and can only be configured at the organization level.
-      - SCIM is only available at the organization level. When SSO is setup at the enterprise level, SCIM cannot be configured.
-      - Team Sync requires SCIM setup, so it can only be configured at the organization level.
+      - SCIM requires SSO and can only be configured at the organization level. It cannot be configured at the enterprise level.
+      - Team Sync requires SCIM setup, so it can only be configured at the organization level as well.
       - Setting up SSO at the organization level makes it possible for companies with multiple engineering organizations that operate as part of distinct business entities or subsidiaries to be part of the same enterprise and governed by the same enterprise policies, while still maintaining distinct IdPs.
   
   - <details>
-    <summary>Teams & Team Sync: When using Team Sync to sync between IdP Groups and GitHub Teams, do NOT use GitHub Team hierarchies.</summary>
+    <summary>When using Team Sync, do NOT use GitHub Team hierarchies.</summary>
     <br>
     
     - _Rationale:_
-      - IdP groups will not sync to lower level teams.
+      - IdP groups will not sync to lower level GitHub teams.
     </details>
     
   - <details>
-    <summary>Teams & Team Sync: If you have an IdP group with access to GitHub, create a single, all-purpose team in your GitHub organization and sync it with the IdP group. Give this team base permissions to all repositoies.</summary>
+    <summary>If you have an IdP group with access to GitHub, create a single, all-purpose team in your GitHub organization to sync with this IdP group. Give the all-purpose GitHub team base permissions to all repositories.</summary>
     <br>
     
     - _Rationale:_
-      - When new members are added to the IdP group, they will automatically be invited to the organization via the all-purpose team.
+      - When new members are added to the IdP group, they will automatically be invited to the GitHub organization via the all-purpose GitHub team.
     </details>
     
   - <details>
-    <summary>Teams & Team Sync: Create additional GitHub Teams and corresponding IdP groups to manage user roles across an organization.</summary>
+    <summary>Create additional GitHub Teams to manage user roles across a GitHub organization. Sync these teams with IdP groups.</summary>
     <br>
 
     - _Rationale:_
-      - User permissions in GitHub can be managed via the IdP.
+      - Easily manage GitHub user permissions via your IdP.
     - **Example:**
       - The GitHub team, _A-Devs_, includes GitHub users in the IdP group, _Dev Team A_. These users have write roles on Repos 1, 2, and 3.
       - The GitHub team, _B-Devs_, includes GitHub users in the IdP group, _Dev Team B_. These users have write roles on Repos 3, 4, and 5.
@@ -155,7 +154,7 @@
     </details>
     
   - <details>
-    <summary>Organization & Repo Roles: Create custom organization and repository roles as needed.</summary>
+    <summary>Create custom organization and repository roles as needed.</summary>
     <br>
     
     - _Rationale:_
