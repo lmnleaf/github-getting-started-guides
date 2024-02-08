@@ -13,7 +13,8 @@
   <summary>Step 2: Add a Backup Enterprise Owner to Your Enterprise Account</summary>
   <br>
 
-  - **Go to:** _Enterprise &rarr; People (left sidebar) &rarr; Administrators (left sidebar) &rarr; Invite admin (green button, top right)_
+  - **Go to:**
+    - _Enterprise &rarr; People (left sidebar) &rarr; Administrators (left sidebar) &rarr; Invite admin (green button, top right)_
 
   # <Line>
 
@@ -31,8 +32,9 @@
     <summary>Microsoft Entra ID</summary>
     <br>
 
-    - To set up SSO and SCIM, add the GitHub Enterprise Cloud - Organization app in the Microsoft Entra Admin Center and configure GitHub with SAML details from Microsoft Entra (such as your public certificate).
-    - As part of this process, you will create a GitHub organization and invite members to join.
+    - **Info:** When setting up SSO and SCIM, you will:
+      - add the GitHub Enterprise Cloud - Organization app in the Microsoft Entra Admin Center and configure GitHub with SAML details from Microsoft Entra (such as your public certificate).
+      - create a GitHub organization and invite members to join.
     - To set up SSO and SCIM, follow the Microsoft tutorials (see docs below line).
    
     # <Line>
@@ -49,8 +51,9 @@
     <summary>Okta</summary>
     <br>
 
-    - To set up SSO and SCIM, add the GitHub Enterprise Cloud - Organization app from Applications in Okta and configure GitHub with SAML details from Okta (such as your public certificate).
-    - As part of this process, you will create a GitHub organization and invite members to join.
+    - **Info:** When setting up SSO and SCIM, you will:
+      - add the GitHub Enterprise Cloud - Organization app from Applications in Okta and configure GitHub with SAML details from Okta (such as your public certificate)
+      - create a GitHub organization and invite members to join.
     - To set up SSO and SCIM, follow the GitHub and Okta tutorials (see docs below line).
    
     # <Line>
@@ -70,7 +73,8 @@
   <summary>Step 4: Download SAML SSO Recovery Codes</summary>
   <br>
 
-  - **Go to:** _Organization &rarr; Settings &rarr; Authentication Security &rarr; Save Your Recover Codes (under SAML Single Sign-On)
+  - **Go to:**
+    - _Organization &rarr; Settings &rarr; Authentication Security &rarr; Save Your Recovery Codes (under SAML Single Sign-On)_
 
   # <Line>
 
@@ -86,7 +90,8 @@
   <br>
   
   - **Info:** Setting up Team Sync will allow you to sync IdP Groups to GitHub Teams. For example, teams can be granted Copilot licenses, and when a user is removed from the IdP group, they will automatically be removed from the GitHub Team and their Copilot license will be revoked.
-  - To add a GitHub Team and connect it to an existing IdP Group, **go to**: _Organization &rarr; Teams (tab at top) &rarr; New Team (green button to the right)_
+  - **Go to:**
+    - _Organization &rarr; Teams (tab at top) &rarr; New Team (green button on the right) &rarr; Identity Provider Group &rarr; Select group_
 
   # <Line>
 
