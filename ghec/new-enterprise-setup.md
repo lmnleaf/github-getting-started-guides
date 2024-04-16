@@ -1,4 +1,4 @@
-# Getting Started: GitHub Enterprise Cloud Setup
+# GitHub Enterprise Cloud Setup
 
 <details>
   <summary>Step 1: Accept the Invitation to Your New GitHub Enterprise Account</summary>
