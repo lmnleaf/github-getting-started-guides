@@ -105,12 +105,12 @@
   <summary>Step 6: Add a Verified Domain to Your Organization (Optional)</summary>
   <br>
 
-  - **Info:** Verified domains are verified via your DNS provider. Setting up a verified domain adds a verified badge to the company URL and email address displayed on your organization's public facing profile page.
-  - **To set up a verified domain, go to:**
+  - **Info:** Setting up a verified domain adds a verified badge to the company URL and email address displayed on your organization's public facing profile page. Verified domains are verified via your DNS provider. 
+  - **To set a verified domain, go to:**
     - _Enterprise &rarr; Settings &rarr; Verified and Approved Domains &rarr Configure & Verify the Domain_ OR
     - _Organization → Settings → Security → Verified and Approved Domains &rarr; Configure & Verify the Domain_
-  - **To set the company URL and email address on your organization's profile page, go to:**
-    - 
+  - **To set company URL and email address, go to:**
+    - _Organization &rarr; Settings &rarr; General (landing page for Settings) &rarr; URL & Email fields_
 
   # <Line>
 
@@ -124,11 +124,10 @@
   <summary>Step 7: Restrict Email Notifications to Verified/Approved Domains (Optional)</summary>
   <br>
 
-  - **Info:** Verified domains are verified via your DNS provider. Setting up a verified domain adds a verified badge to the company domain and email address displayed on your organization's public facing profile page.
+  - **Info:** Both verified and approvided domains can be used to restrict email notifications to specified domains for employees and contractors. Unlike verified domains, approved domains do not need to be verified via a DNS provider. 
   - **Go to:**
-    - _Enterprise &rarr; Settings &rarr; Verified and Approved Domains &rarr Configure & Verify the Domain_ OR
-    - _Organization → Settings → Security → Verified and Approved Domains &rarr; configure domain and select "Restrict email notifications to only verified and approved domains"_
-  Approved domains are not verified via your DNS provider. Both verified and approved domains can be used to restrict email notifications to specified domains for employees and contractors (see next steps).
+    - _Enterprise &rarr; Settings &rarr; Verified and Approved Domains &rarr select "Restrict email notifications to only verified and approved domains"_ OR
+    - _Organization → Settings → Security → Verified and Approved Domains &rarr; select "Restrict email notifications to only verified and approved domains"_
 
   <br>
 </details>
