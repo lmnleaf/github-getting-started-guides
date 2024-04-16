@@ -88,3 +88,66 @@
 
   <br>
 </details>
+
+<details>
+  <summary>Best Practices for Copilot Adoption</summary>
+  <br>
+  
+  - <details>
+    <summary>Identify Copilot Champions.</summary>
+    <br>
+    
+    - _Rationale:_
+      - Many developers resist adopting new tools including Copilot, but the faster your developers adopt Copilot, the more quickly your team will see productivity gains overall.
+      - Copilot Champions are early adopters and AI enthusaists who recognize the value of Copilot for increased productivity.
+      - Copilot Champions act as a resource for your team, making adoption more attractive and easier by providing tips for working with Copilot and concrete use cases where Copilot made a difference for them.
+      - When your developers have questions about Copilot or want to learn more about prompt engineering, send them to your Copilot Champions.
+      - Engineering teams with Copilot Champions adopt Copilot more quickly.
+
+    <br>
+    </details>
+
+  - <details>
+    <summary>Provide Copilot training for your administrators and developers.</summary>
+    <br>
+    
+    - _Rationale:_
+      - Copilot training will help your developers become efficient Copilot users.
+      - Copilot training will help your admins setup Copilot at scale and identify security considerations.
+    - _GitHub Training Programs:_
+      - [GitHub Copilot Business for Developers Fundamentals](https://github.com/services/copilot-for-business-fundamentals-training)
+      - [GitHub Copilot Business for Developers - Intermediate](https://github.com/services/github-copilot-for-developers-intermediate)
+      - For additional training programs, including Copilot programs for adminstrators that address security considerations, contact your GitHub rep or view GitHub's [Services Catalog](https://github.com/services#services-catalog).
+
+    <br>
+    </details>
+
+  - <details>
+    <summary>Provide time for developers to practice using Copilot.</summary>
+    <br>
+    
+    - _Rationale:_
+      - When developers work with Copilot, they are prompt engineering.
+      - Prompt engineering is a skill that can be learned and improved.
+    - _GitHub Resources for Copilot Practice:_
+      - [Copilot Hackathon](https://github.com/octodemo/copilot-hackathon) (repo)
+
+    <br>
+    </details>
+
+  - <details>
+    <summary>Review Copilot usage data.</summary>
+    <br>
+    
+    - _Rationale:_
+      - Review usage data to ensure you haven't allocated more licenses than are needed.
+      - Review usage data to get a sense of who is using Copilot and how it is impacting your business.
+    - GitHub Docs:
+      - [Copilot Usage Data in the UI](https://docs.github.com/en/enterprise-cloud@latest/copilot/managing-github-copilot-in-your-organization/managing-access-for-copilot-in-your-organization#reviewing-usage-data-for-github-copilot-in-your-organization)
+      - [Copilot Usage Data in the API](https://docs.github.com/en/enterprise-cloud@latest/rest/copilot/copilot-user-management?apiVersion=2022-11-28#list-all-copilot-seat-assignments-for-an-organization)
+
+    <br>
+    </details>
+
+  <br>
+</details>
