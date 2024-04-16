@@ -1,4 +1,4 @@
-# Getting Started: Visual Studio with GitHub Enterprise License Assignment
+# Visual Studio with GitHub Enterprise License Assignment
 
 <details>
   <summary>Step 1: Assign Visual Studio with GitHub Enterprise Subscriptions to Users</summary>
