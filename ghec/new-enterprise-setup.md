@@ -89,7 +89,7 @@
   <summary>Step 5: Set up Team Sync (Optional)</summary>
   <br>
   
-  - **Info:** Setting up Team Sync will allow you to sync IdP Groups to GitHub Teams. For example, teams can be granted Copilot licenses, and when a user is removed from the IdP group, they will automatically be removed from the GitHub Team and their Copilot license will be revoked.
+  - **Info:** Setting up Team Sync will allow you to sync IdP Groups to GitHub Teams.
   - **Go to:**
     - _Organization &rarr; Teams (tab at top) &rarr; New Team (green button on the right) &rarr; Identity Provider Group &rarr; Select group_
 
