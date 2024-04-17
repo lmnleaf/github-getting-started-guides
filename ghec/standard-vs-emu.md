@@ -1,8 +1,8 @@
-# Standard GitHub Enterprise Account vs Enterprise Managed User Account
+# Standard GitHub Enterprise vs Enterprise Managed Users
 
-### Standard GitHub Enterprises
+### Standard GitHub Enterprise
 
-Standard GitHub enterprises are designed so tech companies can do two things:
+Standard GitHub enterprises are designed so companies can do two things:
 - work on their own proprietary codebases.
 - collaborate with their customers and the broader development community.
 
@@ -69,8 +69,30 @@ Most GitHub customers are on a standard GitHub enterprise.
 Enterprise Managed User (EMU) enterprise are designed for companies with:
 - strict compliance requirements that prevent them from using the standard model.
 
+# <Line>
+
 <details>
-  <summary>How SSO & SCIM Work with an EMU Enterprise</summary>
+  <summary>EMU Limitations</summary>
+  <br> 
+  
+  - Some teams use public facing repositories, gists, wikis, or pages to share client libraries or tooling with their customers and the broader development community. This is NOT an option with EMU.
+    - EMU enterprises have only private and internal repositories.
+    - EMU enterprises cannot interact with public facing resources. For example, they cannot create or fork public repositories. 
+  - All members of an EMU enterprise must have an identity in the same IdP tenant.
+    - There are some cases where this is not ideal. For example, when one company acquires another and both companies use separate IdPs for SSO.
+  - Finally, with EMU, the commits your devs make at work will not add to their GitHub contribution graphs. The contribution graph never shows details about commits made to private repositories, but it does show that a developer committed on any given day. Some developers want their contributions to show because it is part of how they market themselves to the larger development community and to future employers.
+  - Existing GitHub Customers: Moving from a GitHub organization or standard GitHub enterprise to an EMU enterprise requires a migration.
+    - There are two options for the migration:
+      - a self-serve migration using [GitHub Enterprise Importer](https://github.com/github/gh-gei).
+      - an [Expert Services](https://github.com/services/) engagement.
+    
+  <br>
+</details>
+
+# <Line>
+
+<details>
+  <summary>How SSO & SCIM Work on an EMU Enterprise</summary>
   <br>
   
   - SAML SSO & SCIM can be configured at the Enterprise level only.
@@ -82,13 +104,6 @@ Enterprise Managed User (EMU) enterprise are designed for companies with:
     - User deprovisioning deletes the account.
       - The user will no longer have access to a work related GitHub account or to the organization's resources.
   - There are some restrictions on EMU enterprises that do not apply to standard enterprises (see next dropdown).
-
-  <br>
-</details>
-
-<details>
-  <summary>EMU Limitations</summary>
-  <br>
 
   <br>
 </details>
