@@ -112,7 +112,7 @@
     </details>
 
   - <details>
-    <summary>SSO Configured on the Enterprise</summary>
+    <summary>Enterprise with SSO Configured at Enterprise Level (Not Recommended)</summary>
     <br>
     
     - **Info:**
