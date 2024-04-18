@@ -86,7 +86,29 @@
 </details>
 
 <details>
-  <summary>Step 5: Set up Team Sync (Optional)</summary>
+  <summary>Step 5: Require SAML SSO Authentication</summary>
+  <br>
+
+  - **Go to:**
+    - _Organization &rarr; Settings &rarr; Authentication security &rarr; SAML single sign-on &rarr; Require SAML SSO authentication_
+  - **Info:** Once SSO is required:
+    - Org members must login via your IdP to access the organization's resources.
+    - Org members must configure their SSH keys and PATs for SSO with your organization.
+    - Some GitHub Apps may require an active SSO session for authorization.
+
+  # <Line>
+
+  - **GitHub Docs:**
+    - [Enforcing SSO](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-saml-single-sign-on-for-your-organization/enforcing-saml-single-sign-on-for-your-organization)
+    - [Authorizing a PAT for SSO](https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-saml-single-sign-on/authorizing-a-personal-access-token-for-use-with-saml-single-sign-on)
+    - [Authorizing an SSH Key for SSO](https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-saml-single-sign-on/authorizing-an-ssh-key-for-use-with-saml-single-sign-on)
+    - [SAML & GitHub Apps](https://docs.github.com/en/enterprise-cloud@latest/apps/using-github-apps/saml-and-github-apps)
+     
+  <br>
+</details>
+
+<details>
+  <summary>Step 6: Set up Team Sync (Optional)</summary>
   <br>
   
   - **Info:** Setting up Team Sync will allow you to sync IdP Groups to GitHub Teams.
@@ -102,7 +124,7 @@
 </details>
 
 <details>
-  <summary>Step 6: Add a Verified Domain to Your Organization (Optional)</summary>
+  <summary>Step 7: Add a Verified Domain to Your Organization (Optional)</summary>
   <br>
 
   - **Info:** Setting up a verified domain adds a verified badge to the company URL and email address displayed on your organization's public facing profile page. Verified domains are verified via your DNS provider. 
@@ -121,7 +143,7 @@
 </details>
 
 <details>
-  <summary>Step 7: Restrict Email Notifications to Verified/Approved Domains (Optional)</summary>
+  <summary>Step 8: Restrict Email Notifications to Verified/Approved Domains (Optional)</summary>
   <br>
 
   - **Info:** Both verified and approvided domains can be used to restrict email notifications to specified domains for employees and contractors. Unlike verified domains, approved domains do not need to be verified via a DNS provider. 
