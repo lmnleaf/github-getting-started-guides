@@ -62,9 +62,9 @@
   <summary>Step 4: Assign Copilot Licenses to Users</summary>
   <br>
 
-  **Info:** Copilot licenses can be assigned to individual users or teams. Copilot licenses can also be assigned by uploading a CSV of users.
-  **Go to:** 
-  - _Organization &rarr; Settings (tab top right) &rarr; Copilot (left sidebar) → Access &rarr; select "Enable for: All members of the organization" OR "Enable for: Selected members"_
+  - **Info:** Copilot licenses can be assigned to individual users or teams. Copilot licenses can also be assigned by uploading a CSV of users.
+  - **Go to:** 
+    - _Organization &rarr; Settings (tab top right) &rarr; Copilot (left sidebar) → Access &rarr; select "Enable for: All members of the organization" OR "Enable for: Selected members"_
 
   # <Line>
 
