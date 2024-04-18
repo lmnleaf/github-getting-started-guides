@@ -53,7 +53,7 @@
       - Ensure the test org members can login to GitHub via the GitHub tile/app in your IdP.
     - **Info:**
       - Once your org members login with SSO, they will _always_ be prompted to login with SSO.
-      - They will also need to configure their SSH keys and PATs for SSO access to the org (see below).
+      - They will also need to configure their SSH keys and PATs for SSO access to the org (see Step 4: Prepare to Require SSO Login).
   
     <br>
     </details>
