@@ -27,6 +27,8 @@
   <br>
 </details>
 
+
+
 ### Organization
 
 <details>
@@ -75,6 +77,70 @@
   - **GitHub Docs:**
     - [Managing Outside Collaborators](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-user-access-to-your-organizations-repositories/managing-outside-collaborators)
     - [Inviting Outside Collaborators](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-user-access-to-your-organizations-repositories/adding-outside-collaborators-to-repositories-in-your-organization)
+
+  <br>
+</details>
+
+### Identifying/Tracking Organization Members
+
+<details>
+  <summary>Best Practices</summary>
+  <br>
+
+  - <details>
+    <summary>Restrict Email Notifications to Verified/Approved Domains</summary>
+    <br>
+
+    - _Rationale:_
+      - When email notifications are restricted to verified or approved domains:
+        - Members and outside collaborators must add their work email addresses to their GitHub personal accounts to receive emails about the activity in your GitHub organization.
+        - Member and outside collaborator email addresses will be visible along with their GitHub username in the People tab in your organization.
+        - Member and outside collaborator email addresses will be available in exports and the REST API.
+       
+    # <Line>
+
+    - **GitHub Docs:**
+      [Adding a Verified or Approved Domain for Your Organization](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-organization-settings/verifying-or-approving-a-domain-for-your-organization)
+
+    <br>
+    </details>
+  - <details>
+    <summary>Set Metadata Restrictions using Repo Rulesets</summary>
+    <br>
+
+    - _Rationale:_
+      - Metadata restrictions can be set to require users to have a committer email in a particular format, for example, ending in `workdomain.com`.
+      - Email addresses appear in all commits accessed via the REST API.
+     
+    # <Line>
+
+    - **GitHub Docs:**
+      - [Managing Rulesets for an Organization](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-organization-settings/managing-rulesets-for-repositories-in-your-organization)
+      - [Creating a Ruleset](https://docs.github.com/en/enterprise-cloud@latest/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/creating-rulesets-for-a-repository)
+      - [Adding Metadata Restrictions](https://docs.github.com/en/enterprise-cloud@latest/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/creating-rulesets-for-a-repository#adding-metadata-restrictions)
+    
+    <br>
+    </details>
+  - <details>
+    <summary>Review User Activity in the Audit Log</summary>
+    <br>
+
+    - _Rationale:_
+      - View user activity in the Audit Log for an organization or enterprise.
+      - When SSO is enabled, events include the users SSO identity.
+      - _Note:_ The audit log is available at the organization and enterprise level, and it can be accessed from the UI or API, exported, or streamed to a SIEM (enterprise level only).
+     
+    # <Line>
+
+    - **GitHub Docs:**
+      - [Exporting Audit Log Activity](https://docs.github.com/en/enterprise-cloud@latest/admin/monitoring-activity-in-your-enterprise/reviewing-audit-logs-for-your-enterprise/exporting-audit-log-activity-for-your-enterprise)
+      - [About the Audit Log](https://docs.github.com/en/enterprise-cloud@latest/admin/monitoring-activity-in-your-enterprise/reviewing-audit-logs-for-your-enterprise/about-the-audit-log-for-your-enterprise)
+      - [Exporting Audit Log Activity for Your Enterprise](https://docs.github.com/en/enterprise-cloud@latest/admin/monitoring-activity-in-your-enterprise/reviewing-audit-logs-for-your-enterprise/exporting-audit-log-activity-for-your-enterprise)
+    - **GitHub Blog:**
+      - [SAML Identity in the Audit Log](https://github.blog/changelog/2024-03-19-logging-saml-sso-and-scim-identity-data-in-audit-log-events-is-generally-available/)
+    
+    <br>
+    </details>
 
   <br>
 </details>
