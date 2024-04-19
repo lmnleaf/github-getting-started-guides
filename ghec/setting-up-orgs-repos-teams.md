@@ -370,3 +370,7 @@
   <br>
   </details>
 
+----
+
+For more best practices, please talk to your GitHub Rep or Solutions Engineer.
+
