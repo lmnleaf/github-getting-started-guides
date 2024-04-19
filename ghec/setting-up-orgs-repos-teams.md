@@ -143,7 +143,8 @@
     <br>
     </details>
 
-    
+  <br>
+
   - **To create an organization, go to:**
     - _Enterprise &rarr; Organizations (left sidebar) &rarr; New organization (button upper right)_
 
@@ -246,10 +247,26 @@
     - Optionally create rulesets for other branches.
 
   <br>
+
+  <br>
+
+  - **To create Rulesets, go to:**
+    - _Organization &rarr; Settings (tab at the top) &rarr; Repositories (left sidebar) &rarr; Rulesets_ OR
+    - _Repository &rarr; Settings (tab at the top) &rarr; Rules (left sidebar) &rarr; Rulesets_
+       
+  <br>
+  
+  - **GitHub Docs:**
+    - [Rulesets](https://docs.github.com/en/enterprise-cloud@latest/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets)
+    - [Create a Ruleset Overview](https://docs.github.com/en/enterprise-cloud@latest/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets)
+    - [Create a Branch/Tag Ruleset](https://docs.github.com/en/enterprise-cloud@latest/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/creating-rulesets-for-a-repository#creating-a-branch-or-tag-ruleset)
+
+
+  <br>
   </details>
 
 - <details>
-  <summary>Use custom properties to organize your repositories.</summary>
+  <summary>Use Custom Properties to organize your repositories.</summary>
   <br>
 
   - _Rationale:_
@@ -261,6 +278,19 @@
       - repositiries that contain internal tooling and the type of tooling.
       - microservices for particular projects or product lines.
       - teams repsonsible for monitoring deploys.
+     
+  - **To create Custom Properties, go to:**
+    - _Organization &rarr; Settings (tab at the top) &rarr; Repositories (left sidebar) &rarr; Custom Properties &rarr; New property (button top right)_
+  - **To assign Custom Properties, go to:**
+    - _Repository &rarr; Settings (tab at the top) &rarr; Custom Properties (left sidebar)_
+       
+  <br>
+  
+  - **GitHub Docs:**
+    - [Managing Custom Properties](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization)
+    - [Create Custom Properties](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization#adding-custom-properties)
+    - [Setting Custom Properties]([https://docs.github.com/en/enterprise-cloud@latest/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/creating-rulesets-for-a-repository#creating-a-branch-or-tag-ruleset](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization#setting-values-for-repositories-in-your-organization)
+
 
   <br>
   </details>
@@ -271,6 +301,17 @@
 
   - _Rationale:_
     - Many companies have repos that are very active. Pin these to the organization landing page so that everyone, especially new developers, can find them easily.
+   
+  <br>
+
+  - **To pin repositories, go to:**
+    - _Organization (landing page) &rarr; View as (right sidebar) &rarr; Member &rarr; Pin Repositories (blue link)_
+
+  <br>
+
+  - **GitHub Docs:**
+    - [Customizing Your Organization's Profile](https://docs.github.com/en/enterprise-cloud@latest/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile)
+    - [Pinning Repositories to Your Profile](https://docs.github.com/en/enterprise-cloud@latest/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile#pinning-repositories-to-your-organizations-profile)
   
   <br>
   </details>
@@ -312,6 +353,19 @@
         - Create a GitHub team for DevTeam1 that can be used for communication. Assign repos and give the team Read access.
         - Create another GitHub team for the developers on DevTeam1. Assign repos and give the devs Write access.
         - Finally, create one more GitHub team for the team lead. Assign repos and give them Admin access.
+       
+  <br>
+
+  - **Note:** Teams can be synced to IdP groups. For more information, see the `new-enterprise-setup` readme or the `enabling-sso-on-existing-organization` readme.
+
+  <br>
+
+  - **To create teams, go to:**
+    _ _Organization &rarr; Teams &rarr; New team (button to the right)_
+
+  - **GitHub Docs:**
+    - [Teams](https://docs.github.com/en/enterprise-cloud@latest/organizations/organizing-members-into-teams/about-teams)
+    - [Creating a Team](https://docs.github.com/en/enterprise-cloud@latest/organizations/organizing-members-into-teams/creating-a-team)
 
   <br>
   </details>
