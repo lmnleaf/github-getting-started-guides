@@ -33,6 +33,17 @@
       - track user activity over time.
       - retain your audit log beyond the 3-6 months it is available from GitHub.
       - set alerts for certain activities.
+     
+  <br>
+
+  - **To view the Enterprise Audit Log and set up streaming, go to:**
+    - _Enterprise &rarr; Settings (left sidebar) &rarr; Audit Log &rarr; Events/Log Streaming (tabs under the Audit Log heading)_
+
+  <br>
+  
+  - **GitHub Docs:**
+    - [Streaming Audit Log](https://docs.github.com/en/enterprise-cloud@latest/admin/monitoring-activity-in-your-enterprise/reviewing-audit-logs-for-your-enterprise/streaming-the-audit-log-for-your-enterprise)
+    - [Setting Up Audit Log Streaming & Supported SIEMs](https://docs.github.com/en/enterprise-cloud@latest/admin/monitoring-activity-in-your-enterprise/reviewing-audit-logs-for-your-enterprise/streaming-the-audit-log-for-your-enterprise#setting-up-audit-log-streaming)
 
   <br>
   </details>
@@ -46,6 +57,16 @@
       - Examples:
         - Actions Workflow Permissions (default to Read on the enterprise).
         - Copilot Access Permissions (Note: Copilot licenses are assigned at the org level, but org level access must be granted at the enterprise level).
+       
+  <br>
+
+  - **To configure Settings and Policies, go to:**
+    - _Enterprise &rarr; Policies or Settings (left sidebar)_
+       
+  <br>
+  
+  - **GitHub Docs:**
+    - [Setting Policies for Your Enterprise](https://docs.github.com/en/enterprise-cloud@latest/admin/policies)
 
   <br>
   </details>
@@ -118,9 +139,18 @@
     <br>
 
     - _Note:_ If there were an occasion for subsidiaries or departments to collaborate, one of the organizations can create internal repositories. (See the Repositories section for more info).
-  
+
     <br>
     </details>
+
+    
+  - **To create an organization, go to:**
+    - _Enterprise &rarr; Organizations (left sidebar) &rarr; New organization (button upper right)_
+
+  <br>
+     
+  - **GitHub Docs:**
+      - [Creating a New Organization](https://docs.github.com/en/enterprise-cloud@latest/organizations/collaborating-with-groups-in-organizations/creating-a-new-organization-from-scratch)
 
   <br>
   </details>
@@ -149,6 +179,17 @@
     <br>
     </details>
 
+    <br>
+
+    - **To set base user permissions, go to:**
+      - _Enterprise &rarr; Settings &rarr; Repositories (landing page) &rarr; Base Permissions (top of the page)_ OR
+      - _Organization &rarr; Settings &rarr; Member Permissions (left sidebar) &rarr; Base Permissions (top of the page)_
+     
+    <br>
+
+    - **GitHub Docs:**
+      - [Setting Base User Permissions on an Organization](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/setting-base-permissions-for-an-organization)
+
   <br>
   </details>
 
@@ -159,6 +200,16 @@
 #### Info:
 - Organizations can have a few to a few thousand repositories.
 - Repositories are where your developers and supporting teams collaborate.
+- <details>
+    <summary>Three Types of Repositories</summary>
+    <br>
+
+    - **Private** - only accessible to members of the org.
+    - **Internal** - accessible to all orgs (used for [innersource](https://resources.github.com/innersource/what-is-innersource/)).
+    - **Public** - can be read or forked by anyone on the internet.
+
+    <br>
+  </details>
 - Repositories can be categorized for easy filtering.
 - Repository access is managed via GitHub Teams.
 - Rulesets control how users interact with repository branches and tags.
