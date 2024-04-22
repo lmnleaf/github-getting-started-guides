@@ -1,23 +1,26 @@
-# Best Practices: Enterprises, Organizations, Repositories, and Teams
+# Getting Started: Enterprises, Organizations, Repositories, and Teams
 
-### Enterprise
+The following provides an overview and some basic best practices for getting started with GitHub Enterprise, Organizations, Repos, and Teams.
 
-#### Info:
-- The enterprise account provides controls and insight into everything in your company's GitHub account.
-- <details>
-  <summary>What's in an Enterprise Account</summary>
-  <br>
+----
+
+## Enterprise
+
+The enterprise account provides a single point of visibility, management, and enforcement of policies and settings for your company's GitHub account. 
+
+<details>
+<summary>What's in an Enterprise Account</summary>
+<br>
   
-  - Organizations
-  - Policies and Settings for all organizations
-  - Security insights for customers using Advanced Security
-  - GitHub Connect (connects Server instances to Cloud instances for customers using GitHub Enterprise Server in addition to GitHub Enterprise Cloud)
-  - Audit Log
-  - GitHub Compliance documentation
+- Organizations
+- Policies and Settings for all organizations
+- Security insights for customers using Advanced Security
+- GitHub Connect (connects Server instances to Cloud instances for customers using GitHub Enterprise Server in addition to GitHub Enterprise Cloud)
+- Audit Log
+- GitHub Compliance documentation
   
-  <br>
-  </details>
-
+<br>
+</details>
 
 # <Line>
 
@@ -27,12 +30,11 @@
   <summary>Set up Audit Log streaming to a SIEM.</summary>
   <br>
   
-  - _Rationale:_
-    - The GitHub Audit Log allows you to view user activity, including Git activity.
-    - Audit Log streaming allows you to:
-      - track user activity over time.
-      - retain your audit log beyond the 3-6 months it is available from GitHub.
-      - set alerts for certain activities.
+  - The GitHub Audit Log allows you to view user activity, including Git activity.
+  - With Audit Log Streaming, you can:
+    - track user activity over time.
+    - retain your audit log beyond the 3-6 months it is available from GitHub.
+    - set alerts for certain activities.
      
   <br>
 
@@ -52,11 +54,10 @@
   <summary>Configure settings and policies that cannot or should not be configured by org owners.</summary>
   <br>
   
-  - _Rationale:_
-    - Some policies must be configured at the enterprise level.
-      - Examples:
-        - Actions Workflow Permissions (default to Read on the enterprise).
-        - Copilot Access Permissions (Note: Copilot licenses are assigned at the org level, but org level access must be granted at the enterprise level).
+  - Some policies must be configured at the enterprise level.
+    - Examples:
+      - Actions Workflow Permissions (Note: these default to Read on the enterprise).
+      - Copilot Access Permissions (Note: Copilot licenses are assigned at the org level, but org level access must be granted at the enterprise level).
        
   <br>
 
@@ -73,14 +74,13 @@
 
 ----
 
-### Organizations
+## Organizations
 
-#### Info:
 - Enterprises can have one or more organizations.
 - Each organization can have a distinct set of members.
 - Each organization has it's own repositories.
 - <details>
-  <summary>What's in an Organization</summary>
+  <summary>What's in an Organization?</summary>
   <br>
 
   - Repositories
@@ -95,26 +95,25 @@
   <br>
   </details>
 
-- **Note:** Distinct organizations are NOT needed to limit repository access. (See Best Practices below for more info).
+- **Note:** Distinct organizations are NOT needed to limit repository access. Repository access can be limited via base user permissions and Teams.
 
 # <Line>
 
 #### Best Practices:
 
 - <details>
-  <summary>Create ONE organization.</summary>
+  <summary>Start with only ONE organization.</summary>
   <br>
 
   - <details>
-    <summary>Why create only one organization?</summary>
+    <summary>Why start with only one organization?</summary>
     <br>
   
-    - _Rationale:_
-      - SCIM is only available at the organization level.
-        - Using SCIM across multiple organizations requires unique SSO & SCIM configurations on each organization.
-      - Individual organizations are intended for users who work together, i.e., whole engineering teams and their cross functional counterparts.
-      - Access to and permissions on repositories are managed with base member permissions and GitHub Teams.
-
+    - Individual organizations are intended for users who work together, i.e., whole engineering teams and their cross functional counterparts.
+    - Access to and permissions on repositories are managed with base member permissions and GitHub Teams, so in many cases a company will only need one organization.
+    - SCIM is only available at the organization level.
+      - Using SCIM across multiple organizations requires unique SSO & SCIM configurations on each organization, so having only one organization simplifies setup.
+    
      <br>
     </details>
 
@@ -122,7 +121,7 @@
     <summary>When does it make sense to create more than one organization?</summary>
     <br>
   
-    - Two main uses cases:
+    - Two main use cases:
       - Companies with distinct business entitities who's engineering teams operate indepently.
         - Example:
           - Company A acquires Company B.
@@ -132,13 +131,13 @@
       - Companies with divisions/departments that operate independently.
         - Example:
           - Company A has an engineering team that works on their primary product.
-          - They also have a small R&D team that works on highly sensitive code.
+          - They also have an R&D team that works on highly sensitive code.
           - The two teams rarely interact or work together on the same project.
-          - None of the R&D conversations should ever be visible to the engineering team or their cross functional counterparts.
+          - None of the R&D conversations in PRs, Issues, or Discussions need to be visible to the engineering team working on the primary product.
        
     <br>
 
-    - _Note:_ If there were an occasion for subsidiaries or departments to collaborate, one of the organizations can create internal repositories. (See the Repositories section for more info).
+    - **Note:** For Enterprises with multiple organizations, if the organizations need to collaborate on projects (for example share internal tooling), this can be done using Internal Repositories.
 
     <br>
     </details>
@@ -164,9 +163,8 @@
     <summary>Why set permissions to Read?</summary>
     <br>
   
-    - _Rationale:_
-      - Providing Read access to your repositories facilitates learning and development.
-        - Developers tend to be curious and learn from each other. Fostering this curiousity and learning leads to a stronger dev team, with multiple devs capable of taking on and troubleshooting multiple different types of projects.
+    - Providing Read access to your repositories facilitates learning and development and cross team collaboration.
+      - Developers tend to be curious and learn from each other. Fostering this curiousity and learning leads to a stronger dev team, with multiple devs capable of taking on and troubleshooting different types of projects.
 
     <br>
     </details>
@@ -175,7 +173,8 @@
     <summary>When should base user permissions be set to No Permissions.</summary>
     <br>
  
-    - If your organization includes some repositories that are particularly sensitive and should not be viewed by all devs, you can set the base permissions to No Permissions. This will ensure that no one has read access to some repositories unless explicitly granted that access.
+    - If your organization includes some repositories with particularly sensitive code that should not be viewed by all devs, you can set the base permissions to No Permissions. This will ensure that no one has read access to some repositories unless explicitly granted that access.
+      - Example: repos that contains proprietary encryption algorithms.
  
     <br>
     </details>
@@ -198,15 +197,14 @@
 
 ### Repositories
 
-#### Info:
 - Organizations can have a few to a few thousand repositories.
-- Repositories are where your developers and supporting teams collaborate.
+- Repositories are where your developers (and, in many cases, cross functional peers) collaborate.
 - <details>
     <summary>Three Types of Repositories</summary>
     <br>
 
     - **Private** - only accessible to members of the org.
-    - **Internal** - accessible to all orgs (used for [innersource](https://resources.github.com/innersource/what-is-innersource/)).
+    - **Internal** - accessible to members of all orgs (used for [innersource](https://resources.github.com/innersource/what-is-innersource/)).
     - **Public** - can be read or forked by anyone on the internet.
 
     <br>
@@ -215,7 +213,7 @@
 - Repository access is managed via GitHub Teams.
 - Rulesets control how users interact with repository branches and tags.
 - <details>
-  <summary>What's in a Repository (Code! but there's more 🙂)</summary>
+  <summary>What's in a Repository (Code! but there's more 🙂)?</summary>
   <br>
   
   - Code
@@ -237,14 +235,13 @@
 - <details>
   <summary>Create Rulesets for your production branches and/or release tags.</summary>
   <br>
-  
-  - _Rationale:_
-    - Rulesets protect your branches and tags from unexpected changes.
-    - Example rules:
-      - Require pull requests before code is merged to a production branch.
-      - Require Codeowner review.
-      - Prevent deletions.
-    - Optionally create rulesets for other branches.
+
+  - Rulesets protect your branches and tags from unexpected changes.
+  - Example rules:
+    - Require pull requests before code is merged to a production branch.
+    - Require Codeowner review.
+    - Prevent deletions.
+  - Create rulesets for other branches (e.g., staging or QA branches).
 
   <br>
 
@@ -269,15 +266,15 @@
   <summary>Use Custom Properties to organize your repositories.</summary>
   <br>
 
-  - _Rationale:_
-    - Many companies have hundred or thousands of repositories that contain things like monorepos, microservices, internal tooling, documentation, customer facing tools, backfill scripts, and forks of open source tools.
-    - Finding specific repositories can become unwieldy and it's not always feasible to implement strict naming conventions for repositories.
-    - Categorizing repositories makes it much easier to find and manage reposotiries over time.
-    - Custom properties are the best way to categorize repositories in GitHub.
-    - Examples: Use repo categories to identify
-      - repositiries that contain internal tooling and the type of tooling.
-      - microservices for particular projects or product lines.
-      - teams repsonsible for monitoring deploys.
+  - Many companies have hundred or thousands of repositories that contain things like monorepos, microservices, internal tooling, documentation, client libraries, backfill scripts, and forks of open source tools.
+  - Finding specific repositories can become unwieldy, and it's not always feasible to implement strict naming conventions for repositories.
+  - Categorizing repositories makes it much easier to find and manage reposotiries over time.
+   - Custom properties are the best way to categorize repositories in GitHub.
+  - Examples: Use custom properities on repositories to identify
+    - repos that contain internal tooling and the type of tooling.
+    - microservices for particular projects or product lines.
+    - people or dev teams repsonsible for monitoring deploys.
+    - people or dev teams responsible for monintoring security alerts.
      
   - **To create Custom Properties, go to:**
     - _Organization &rarr; Settings (tab at the top) &rarr; Repositories (left sidebar) &rarr; Custom Properties &rarr; New property (button top right)_
@@ -299,8 +296,7 @@
   <summary>Pin important repositories on the org landing page for easy access.</summary>
   <br>
 
-  - _Rationale:_
-    - Many companies have repos that are very active. Pin these to the organization landing page so that everyone, especially new developers, can find them easily.
+  - Many companies have repos that are very active. Pin these repos to the organization landing page so that everyone, especially new developers, can find them easily.
    
   <br>
 
@@ -320,11 +316,11 @@
 
 ### Teams
 
-#### Info:
 - Teams are groups of organization members.
-- Teams are used for communication and controlling repository access permissions.
+- Teams are used grant/control repository and organization access permissions.
+- Teams are used for communication within GitHub (e.g., notifying a team that a particular PR needs attention).
 - <details>
-  <summary>What's in a Team</summary>
+  <summary>What's in a Team?</summary>
   <br>
 
   - Members
@@ -340,32 +336,34 @@
 #### Best Practice: 
 
 - <details>
-  <summary>Organize members into teams that reflect your company's structure.</summary>
+  <summary>Organize members into teams that reflect your company's internal structure.</summary>
   <br>
 
-  - _Rationale:_
-    - Teams are used for managing repository access, but they are also used for communication and can be used to filter repositories and security alerts (for customers using Advanced Security).
-    - Given this, it is important to have teams that reflect your company or engineering team's structure.
-    - **Note:** In addition to teams that reflect your comapny structure, you can also create teams that are just for permissions.
-      - Example:
-        - Your engineering group has a dev team called, "DevTeam1," that includes a team lead, four develoeprs, a QA engineer, and a scrum leader.
-        - The team lead should have admin permissions on three repository, but everyone else should only have read or write permissions on those repositories.
-        - Create a GitHub team for DevTeam1 that can be used for communication. Assign repos and give the team Read access.
-        - Create another GitHub team for the developers on DevTeam1. Assign repos and give the devs Write access.
-        - Finally, create one more GitHub team for the team lead. Assign repos and give them Admin access.
+  - Teams are used for managing repository access, but they are also used for communication and can be used to filter repositories and security alerts (for customers using Advanced Security).
+  - Given this, it is important to set up teams that reflect your company or engineering team's structure.
+  - **Note:** In addition to teams that reflect your comapny structure, you can also create teams that grant permissions only.
+    - Example:
+      - Your company's engineering organization has a dev team called, "DevTeam1," that includes a team lead, four develoeprs, a QA engineer, and a scrum leader.
+      - The team lead should have admin permissions on three repository, but everyone else should only have read or write permissions on those repositories.
+      - Create a GitHub team for DevTeam1 that can be used for communication. Assign repos and give the team Read access.
+      - Create another GitHub team for the developers on DevTeam1. Assign repos and give the devs Write access.
+      - Finally, create one more GitHub team for the team lead. Assign repos and give the team lead Admin access. (Alternatively, give the team lead admin access individually, via the People tab).
        
   <br>
 
-  - **Note:** Teams can be synced to IdP groups. For more information, see the `new-enterprise-setup` readme or the `enabling-sso-on-existing-organization` readme.
+  - **Note:** Teams can be synced to IdP groups. For more information, see the [new-enterprise-setup](https://github.com/lmnleaf/github-getting-started-guides/blob/main/ghec/new-enterprise-setup.md) readme or the [enabling-sso-on-existing-organization](https://github.com/lmnleaf/github-getting-started-guides/blob/main/ghec/enabling-sso-on-existing-organization.md) readme.
 
   <br>
 
   - **To create teams, go to:**
-    _ _Organization &rarr; Teams &rarr; New team (button to the right)_
+    - _Organization &rarr; Teams &rarr; New team (button to the right)_
 
+  <br>
+  
   - **GitHub Docs:**
     - [Teams](https://docs.github.com/en/enterprise-cloud@latest/organizations/organizing-members-into-teams/about-teams)
     - [Creating a Team](https://docs.github.com/en/enterprise-cloud@latest/organizations/organizing-members-into-teams/creating-a-team)
+    - [Team Sync](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-saml-single-sign-on-for-your-organization/managing-team-synchronization-for-your-organization)
 
   <br>
   </details>
@@ -373,4 +371,3 @@
 ----
 
 For more best practices, please talk to your GitHub Rep or Solutions Engineer.
-
