@@ -38,7 +38,7 @@
   <br>
 
   - **Info:** Copilot policies can be configured at the enterprise or organization level. Copilot policies determine which features are available to users and whether matches to public code will be blocked.
-    - Please Note: Copilot in GitHub.com requires Copilot Enterprise licenses. Once enabled, all Copilot license assignments will be for Copilot Enterprise rather than Copilot Business (see additional info below).
+    - **Please Note:** Selecting _Copilot in GitHub.com_ enables Copilot Enterprise licenses. When _Copilot in GitHub.com_ is selected, all Copilot license assignments (new and existing) will be for Copilot Enterprise rather than Copilot Business.
   - **Go to:**
     - _Enterprise &rarr; Polices (left sidebar) &rarr; Policies (tab toward the top, under the Copilot heading)_
     - _Organization &rarr; Settings (tab at the top) &rarr; Copilot (left sidebar) &rarr; Policies_
