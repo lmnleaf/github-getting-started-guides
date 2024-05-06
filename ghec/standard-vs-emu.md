@@ -14,7 +14,7 @@ Most GitHub customers are on a standard GitHub enterprise.
   <summary>Analogy: GitHub as Coworking Space</summary>
   <br>
 
-  GitHub and the stanard GitHub enterprise are somewhat analogous to a physical coworking space.
+  GitHub standard enterprises are somewhat analogous to a physical coworking space.
 
   - Imagine a coworking space in a multi-level building:
     - First Floor
@@ -31,9 +31,11 @@ Most GitHub customers are on a standard GitHub enterprise.
   - Now think about GitHub:
     - Everyone with a personal account is part of the GitHub community.
       - All members of the GitHub community must log in with a username and password (and eventually with 2FA).
+      - Personal accounts and public repositories are analogous to the first floor of the coworking space.
     - But only some people can access enterprise resources, i.e., organizations & private repositories.
-      - Access to enterprise resources is invite only.
-      - And access to enterprise resources protected by SSO requires an additional login.
+      - Access to enterprise resources (both read and write) is invite only AND
+      - Access to enterprise resources that are protected by SSO requires an additional login.
+      - Organizations are analogous to the upper floors of the coworking space.
 
   <br>
 </details>
