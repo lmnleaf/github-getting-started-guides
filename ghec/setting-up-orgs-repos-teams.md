@@ -9,7 +9,7 @@ The following provides an overview and some basic best practices for getting sta
 The enterprise account provides a single point of visibility, management, and enforcement of policies and settings for your company's GitHub account. 
 
 <details>
-<summary>What's in an Enterprise Account</summary>
+<summary>What's in an Enterprise Account?</summary>
 <br>
   
 - Organizations
@@ -78,7 +78,7 @@ The enterprise account provides a single point of visibility, management, and en
 
 - Enterprises can have one or more organizations.
 - Each organization can have a distinct set of members.
-- Each organization has it's own repositories.
+- Each organization has its own repositories.
 - <details>
   <summary>What's in an Organization?</summary>
   <br>
