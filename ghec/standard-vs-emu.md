@@ -11,6 +11,27 @@ Most GitHub customers are on a standard GitHub enterprise.
 # <Line>
 
 <details>
+  <summary>How SSO & SCIM Work on a Standard GitHub Enterprise</summary>
+  <br>
+  
+  - SAML SSO can be configured at the enterprise or organization level.
+  - When an organization requires SSO:
+    - A user must login to their personal GitHub account AND login via SSO to access the organization's resources.
+      - Note: users cannot access any private resources on GitHub without logging in to their personal account.
+    - When a user's SSO session expires and they go to a link or URL for organization resources, they will be prompted to login via SSO.
+    - If a user logs out of their GitHub personal account and then goes to a link or URL for the organization's resources, they will be promted to:
+      - 1) login to their personal account and
+      - 2) login with SSO.
+  - User provisioning and deprovisioning with SCIM:
+    - User provisioning automatically invites an existing GitHub user to become a member of the organization.
+      - When the user accepts the invite, they will be prompted to login with SSO. At that time, GitHub will link their GitHub identity to their IdP identity.
+    - User deprovisioning automatically removes the GitHub user from the organization.
+      - The user will no longer have access the organization's resources, and their GitHub identity will no longer be linked to the IdP identity.
+  - Note: For standard enterprises, best practice is to set up SSO at the organization level as SCIM is only available at that level. In addition, configuring SSO at the organization level allows companies with multiple business entities/subsidiaries to configure SSO with different IdPs on different organizations.
+
+# <Line>
+
+- <details>
   <summary>Analogy: GitHub as Coworking Space</summary>
   <br>
 
@@ -38,28 +59,7 @@ Most GitHub customers are on a standard GitHub enterprise.
       - Organizations are analogous to the upper floors of the coworking space.
 
   <br>
-</details>
-
-# <Line>
-
-<details>
-  <summary>How SSO & SCIM Work on a Standard GitHub Enterprise</summary>
-  <br>
-  
-  - SAML SSO can be configured at the enterprise or organization level.
-  - When an organization requires SSO:
-    - A user must login to their personal GitHub account AND login via SSO to access the organization's resources.
-      - Note: users cannot access any private resources on GitHub without logging in to their personal account.
-    - When a user's SSO session expires and they go to a link or URL for organization resources, they will be prompted to login via SSO.
-    - If a user logs out of their GitHub personal account and then goes to a link or URL for the organization's resources, they will be promted to:
-      - 1) login to their personal account and
-      - 2) login with SSO.
-  - User provisioning and deprovisioning with SCIM:
-    - User provisioning automatically invites an existing GitHub user to become a member of the organization.
-      - When the user accepts the invite, they will be prompted to login with SSO. At that time, GitHub will link their GitHub identity to their IdP identity.
-    - User deprovisioning automatically removes the GitHub user from the organization.
-      - The user will no longer have access the organization's resources, and their GitHub identity will no longer be linked to the IdP identity.
-  - Note: For standard enterprises, best practice is to set up SSO at the organization level as SCIM is only available at that level. In addition, configuring SSO at the organization level allows companies with multiple business entities/subsidiaries to configure SSO with different IdPs on different organizations.
+  </details>
 
   <br>
 </details>
