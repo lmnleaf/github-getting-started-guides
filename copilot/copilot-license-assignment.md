@@ -70,6 +70,7 @@
 
   - **GitHub Docs:**
     - [Configuring Access to GitHub Copilot in Your Organization](https://docs.github.com/en/enterprise-cloud@latest/copilot/managing-github-copilot-in-your-organization/managing-access-for-copilot-in-your-organization#configuring-access-to-github-copilot-in-your-organization)
+    - [Set Up Team Synchronization with an IdP Group](https://docs.github.com/en/enterprise-cloud@latest/organizations/organizing-members-into-teams/synchronizing-a-team-with-an-identity-provider-group)
   
   <br>
 </details>
