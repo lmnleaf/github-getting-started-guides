@@ -4,15 +4,52 @@
   <summary>Step 1: Set Up a Payment Method for GitHub Copilot</summary>
   <br>
 
-  - **Info:** GitHub Copilot is billed monthly. Charges will be posted against a payment method configured on the Enterprise account. The payment method can be a credit card or Azure Subscription.
-  - **Go to:**
-    - _Enterprise &rarr; Settings (left sidebar) &rarr; Billing &rarr; Payment Information (tab under the Billing heading and metered services summary)_
+  - **Info:** GitHub Copilot is billed monthly. Charges will be posted against a payment method configured at the Enterprise level or on a Cost Center in the Enterprise Account.
+    - **Enterprise Level Payment Methods:**
+      - GitHub only customers can pay for Copilot with a credit card or PayPal.
+      - Microsoft customers, who have an Azure subscription, can pay with an Azure Subscription ID.
+    - **Cost Centers:**
+      - A Cost Center is a way to manage spending for groups of organizations, repositories, or individual members. In the case of Copilot, add organizations or individual members to the Cost Center. Optionally, add the Cost Center to a Budget, to limit the features billed to the Cost Center or to set spending limits for Copilot.
+      - **Cost Center Payment Methods:**
+        - GitHub only customers can use Cost Centers to manage spending, but everything will be billed to the enterprise level payment method.
+        - Microsoft customers, who have an Azure subscription, can use Cost Centers to bill to unique Azure Subscription IDs per Cost Center. 
+
+  - **To set an Enterprise level payment method, go to:**
+    - _Enterprise &rarr; Billing & Licensing (left sidebar) &rarr; Payment Information (left sidebar)_
+
+  - **To create a Cost Center and Budget, go to:**
+    - _Enterprise &rarr; Billing & Licensing (left sidebar) &rarr; Cost Centers (left sidebar) &rarr; New cost center_
+      - Add the organization or members. **Note:** Members must be added via the API.
+      - Add the Azure Subscription ID.
+    - _Enterprise &rarr; Billing & Licensing (left sidebar) &rarr; Budgets and alerts &rarr; New budget_
+      - Add Copilot.
+      - Add spending limits and alerts as needed.
 
   # <Line>
-
+  
   - **GitHub Docs:**
-    - **Credit Card:** [Adding/Updating Enterprise Account Payment Information](https://docs.github.com/en/enterprise-cloud@latest/billing/managing-your-github-billing-settings/adding-or-editing-a-payment-method)
-    - **Azure Subscription:** [Connecting an Azure Subscription to GitHub](https://docs.github.com/en/enterprise-cloud@latest/billing/managing-the-plan-for-your-github-account/connecting-an-azure-subscription)
+    - [Cost Centers: Charging Business Units](https://docs.github.com/en/enterprise-cloud@latest/billing/using-the-new-billing-platform/charging-business-units)
+    - [Budgets: Preventing Overspending](https://docs.github.com/en/enterprise-cloud@latest/billing/using-the-new-billing-platform/preventing-overspending)
+    - [Payment Info: Managing Your Payment and Billing Information](https://docs.github.com/en/enterprise-cloud@latest/billing/using-the-new-billing-platform/managing-your-payment-and-billing-information)
+
+  # <Line>
+  
+  - <details>
+      <summary>Previous Billing Platform (will be deprecated 2025 Q1)</summary>
+      <br>
+
+      - **Note:** All enterprises should be migrated to the new billing platform by the end of Q1 2025.
+      - **Info:** If your enterprise is still on the previous billing platform, you will only be able to bill for Copilot licenses at the enterprise level.
+      - **To add billing information, go to:**
+        - _Enterprise &rarr; Settings (left sidebar) &rarr; Billing &rarr; Payment Information (tab under the Billing heading and metered services summary)_
+
+
+      - **GitHub Docs:**
+        - [Adding/Updating Enterprise Account Payment Information (Credit Card or PayPal)](https://docs.github.com/en/enterprise-cloud@latest/billing/managing-your-github-billing-settings/adding-or-editing-a-payment-method)
+        - [Connecting an Azure Subscription to GitHub](https://docs.github.com/en/enterprise-cloud@latest/billing/managing-the-plan-for-your-github-account/connecting-an-azure-subscription)
+
+      <br>
+    </details>
 
   <br>
 </details>
@@ -38,7 +75,6 @@
   <br>
 
   - **Info:** Copilot policies can be configured at the enterprise or organization level. Copilot policies determine which features are available to users and whether matches to public code will be blocked.
-    - **Please Note:** Selecting _Copilot in GitHub.com_ enables Copilot Enterprise licenses. When _Copilot in GitHub.com_ is selected, all Copilot license assignments (new and existing) will be for Copilot Enterprise rather than Copilot Business.
   - **Go to:**
     - _Enterprise &rarr; Polices (left sidebar) &rarr; Policies (tab toward the top, under the Copilot heading)_
     - _Organization &rarr; Settings (tab at the top) &rarr; Copilot (left sidebar) &rarr; Policies_
@@ -70,6 +106,7 @@
 
   - **GitHub Docs:**
     - [Configuring Access to GitHub Copilot in Your Organization](https://docs.github.com/en/enterprise-cloud@latest/copilot/managing-github-copilot-in-your-organization/managing-access-for-copilot-in-your-organization#configuring-access-to-github-copilot-in-your-organization)
+    - [Set Up Team Synchronization with an IdP Group](https://docs.github.com/en/enterprise-cloud@latest/organizations/organizing-members-into-teams/synchronizing-a-team-with-an-identity-provider-group)
   
   <br>
 </details>
@@ -129,8 +166,9 @@
     - _Rationale:_
       - When developers work with Copilot, they are prompt engineering.
       - Prompt engineering is a skill that can be learned and improved.
-    - _GitHub Resources for Copilot Practice:_
-      - [Copilot Hackathon](https://github.com/octodemo/copilot-hackathon) (repo)
+    - _Resources for Copilot Practice:_
+      - [GitHub Copilot Hackathon](https://github.com/octodemo/copilot-hackathon) (repo)
+      - [Microsoft Learn: Copilot Learning Modules](https://learn.microsoft.com/en-us/training/browse/?terms=GitHub%20Copilot)
 
     <br>
     </details>
