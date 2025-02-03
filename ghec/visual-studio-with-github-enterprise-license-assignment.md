@@ -5,6 +5,7 @@
   <br>
   
   - **Info:** Visual Studio with GitHub Enterprise subscriptions are assigned to specific users in the Microsoft Visual Studio admin portal. Once the user has the VS "bundled" license, they can be added to a GitHub organization via SCIM or manually in the UI.
+  - **Note:** Users should add the email associated with their Visual Studio with GitHub Enterprise subscription to their GitHub personal account before accepting the invitation to join the GitHub organization. This will ensure that they consume a VS bundled license in GitHub rather than a standard GitHub Enterprise license.
 
   # <Line>
 
