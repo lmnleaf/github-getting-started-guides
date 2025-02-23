@@ -18,7 +18,7 @@ An enterprise account provides a single point of visibility, management, and enf
 
   <br>
 
-  - <img src="" alt="enterprise-structure" style="width:50%;">
+  - <img src="images/enterprise_overview.png" alt="enterprise-structure" style="width:50%;">
 
   <br>
   </details>
@@ -57,7 +57,7 @@ An organization is where a group of people, such as an IT team, department, clas
  
   <br>
 
-  - <img src="" alt="organization-structure" style="width:50%;">
+  - <img src="images/organization_overview.png" alt="organization-structure" style="width:50%;">
 
   <br>
   </details>
