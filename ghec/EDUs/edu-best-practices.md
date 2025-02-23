@@ -1,4 +1,4 @@
-# GitHub Enterprise Best Practices for Educational Institutions
+# GitHub Enterprise: Best Practices for EDUs
 
 ### Enterprise Configuration
 
@@ -9,23 +9,12 @@
 - GitHub has two types of enterprise accounts: **Standard** and **Enterprise Managed Users (EMU)**.
 - Both provide a single point for management and enforcement of policies and settings for your institution's GitHub account.
 - However, **standard enterprises** are more flexible and therefore recommended for educational institutions.
+- **Note:** In some cases, an educational institution opts for a "dual presence", where they setup a **standard enterprise** for their faculty and students and an **EMU enterprise** for their internal IT or development teams. Talk to your GitHub rep, if you think that might be right for you.
 
 # <Line>
 
 - <details>
-  <summary>What's in an Enterprise Account?</summary>
-  <br>
-  
-  - Organizations
-  - Policies and Settings for All Organizations
-  - Security Insights
-  - GitHub Server License Keys
-  - GitHub Connect (connects Server instances to Cloud instances for customers using GitHub Enterprise Server in addition to GitHub Enterprise Cloud)
-  - Enterprise Audit Log
-  - GitHub Compliance Documentation
-  </details>
-- <details>
-  <summary>Why are standard enterprise accounts recommended for educational institutions?</summary>
+  <summary>Why are standard enterprise accounts recommended for faculty and students?</summary>
   <br>
   
   - <details>
@@ -78,7 +67,7 @@
   </details>
 
 - <details>
-  <summary>Why aren't EMU accounts recommended?</summary>
+  <summary>Why aren't EMU accounts recommended for faculty and students?</summary>
   <br>
 
   - EMU enterprises do NOT include any public facing resources.
@@ -99,8 +88,7 @@
     </details>
 
   </details>
-
-----
+  <br>
 </details>
 
 <details>
@@ -123,9 +111,7 @@
       - If they do so and have NOT been invited to an organization, they will have access to an empty enterprise landing page.
     - Community members will need to be invited to an organization by an organization owner/admin to view the organization's resources (repos, issues, discussions, etc.).
   </details>
-- [Configure SAML 2.0 SSO on an Enterprise](https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/using-saml-for-enterprise-iam/configuring-saml-single-sign-on-for-your-enterprise)
-
-----
+  <br>
 </details>
 
 <details>
@@ -136,22 +122,6 @@
 
 # <Line>
 
-- <details>
-  <summary>What's in an Organization?</summary>
-  <br>
-
-  - Repositories
-  - GitHub Classrooms
-  - Copilot Access (when permitted at the Enterprise level)
-  - Projects
-  - Packages
-  - Discussions
-  - Teams
-  - Actions in Private Repositories (when permitted at the Enterprise level)
-  - Security & Org Level Insights
-  - GitHub Advanced Security (when purchased and permitted at the Enterprise level)
-  - Audit Log
-  - Organizations can have their own admins.
 - <details>
   <summary>Why set up organizations for different groups?</summary>
   <br>
@@ -202,11 +172,15 @@
       - No access to GitHub Advanced Security.
       - No access to Copilot licenses through the university.
     </details>
-  - [Organizations and Enterprise Accounts](https://docs.github.com/en/enterprise-cloud@latest/organizations/collaborating-with-groups-in-organizations/about-organizations#organizations-and-enterprise-accounts)
-  - [Organizations Overview](https://docs.github.com/en/enterprise-cloud@latest/organizations/collaborating-with-groups-in-organizations/about-organizations)
+
+  # <Line>
+
+  - **GitHub Docs:**
+    - [Organizations and Enterprise Accounts](https://docs.github.com/en/enterprise-cloud@latest/organizations/collaborating-with-groups-in-organizations/about-organizations#organizations-and-enterprise-accounts)
+    - [Organizations Overview](https://docs.github.com/en/enterprise-cloud@latest/organizations/collaborating-with-groups-in-organizations/about-organizations)
 
 
-----
+  <br>
 </details>
 
 # <Line>
@@ -489,3 +463,4 @@
 
 ----
 </details>
+
