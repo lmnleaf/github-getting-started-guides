@@ -347,15 +347,3 @@ Managing GitHub as a Service will require implementing the following steps or so
 </details>
 
 **Note:** If you are setting up a dual presence, with both standard and Enterprise Managed Users (EMU) enterprises, please reach out to your GitHub rep for additional information about EMUs.
-
-----
-
-## Organization Membership & Management Best Practices
-
-TO DO:
-- Flow charts.
-- Sample org request forms.
-- Resources for organization admins.
-- Resources for professors (GitHub Classroom docs).
-- Best practices for professors.
-- Best practices for student groups.
