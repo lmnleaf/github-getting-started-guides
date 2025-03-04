@@ -56,9 +56,9 @@ With GitHub as a Service, a central IT team accepts and fulfills requests for Gi
   <br>
 
   Depending on your institutional requirements, your team may also: 
-  - Implent and maintain a process for approving requests for GitHub organizations.
+  - Implement and maintain a process for approving requests for GitHub organizations.
   - Restrict organization access to particular GitHub features via enterprise level policies and settings.
-  - Configure cost centers, budgets, and billing details for requested organizations.
+  - Configure Cost Centers, Budgets, and billing details for requested organizations.
   - Remove inactive enterprise members from existing organizations.
   - Remove inactive organizations from the enterprise.
   - Set global policies that apply to all organizations within the enterprise.
@@ -79,8 +79,8 @@ Managing GitHub as a Service will require implementing the following steps or so
   <summary>Step 1: Accept Requests for Organizations</summary>
   <br>
 
-  - Create and implement a process for your EDU community to request GitHub organizations in your enterprise.
-  - Many EDUs use ServiceNow or other ticketing system to accept and track requests.
+  - Create and implement a process via which members of your EDU community can request GitHub organizations in your enterprise.
+  - Many EDUs use ServiceNow or other ticketing systems to accept and track requests.
 
   # <Line>
 
@@ -96,18 +96,18 @@ Managing GitHub as a Service will require implementing the following steps or so
       |----|-----|-----|
       |University Department||
       |Organization Admin Name||
-      |Organization Admin Email|The org admin will be invited to join the org via their email or GitHub handle (see Step 6).|:white_check_mark:
-      |Organization Admin GitHub Handle|The org admin can be invited to join the org (see Step 6) via their email or GitHub handle.|
+      |Organization Admin Email|The organization admin will be invited to join the org via their email or GitHub handle (see Step 6).|:white_check_mark:
+      |Organization Admin GitHub Handle|The organization admin will be invited to join the org via their email or GitHub handle (see Step 6).|
       |Reason the Organization is Needed||
-      |Features Needed on the Org|Include a list of paid features that can be permitted or blocked with enterprise level settings. If permitted, payment methods and spending limits are set at the enterprise level. Such paid features include: Advanced Security, Actions, GitHub Copilot, and Codespaces.
-      |Organization Name|The organization name|:white_check_mark:
-      |New or Existing Organization|Some groups will already have an existing GitHub organization that they want to add to the enterprise. In such cases, the organization can be invited to join the enterprise. In all other cases, a new organization will need to be created.
-      |Compliance Requirements|Most EDUs allow orgaization admins to configure the settings on their organization to meet their compliance requirements.
+      |Features Needed on the Org|Include a list of paid features that can be permitted or blocked with enterprise level settings. If permitted, payment methods and spending limits are set at the enterprise level. Examples of paid features: Advanced Security, Actions, GitHub Copilot, and Codespaces.
+      |Organization Name||:white_check_mark:
+      |New or Existing Organization|Some groups will already have an existing GitHub organization that they want to add to the enterprise. In such cases, the organization can be invited to join the enterprise. In all other cases, a new organization will need to be created.|
+      |Compliance Requirements|Most EDUs allow organization admins to configure the settings on their organization to meet their compliance requirements.|
       |Whether a GitHub Server Instances is Needed to Meet the Compliance Requirements|Some EDUs have research groups that require high compliance environments and cannot use GitHub Enterprise Cloud. In such cases, research groups will set up a GitHub server instance that is hosted inside their high compliance environment.
       |Name & Email of Person Who Will Maintain the Server Instance (if one is needed)|Some EDUs have a central team that helps set up and maintain server instances when needed. Other EDUs provide the server license (available in the GitHub Enterprise) but leave it up to the research group to set up their own server instance.
       |Additional Organization Admin Emails|This is not required to create the organization, but best practice is to have multiple organization admins. The person who creates the organization will be added automatically as an organization admin.
-      |Additional Organization Admin GitHub Handles|This is not required to create the organization.|
-      |Member Emails|Some EDUs do not collect a list of organization members and instead allow organization admins to manage membership. This can be easier on the team that is managing GitHub as a Service. As long as SSO is configured at the enterprise level, only EDU community members will be able to join an organization, and enterprise admins can still remove inactive members from the organization.|
+      |Additional Organization Admin GitHub Handles|This is not required to create the organization, but best practice is to have multiple organization admins. The person who creates the organization will be added automatically as an organization admin.|
+      |Member Emails|Some EDUs do not collect a list of organization members and instead allow organization admins to manage membership. This can be easier on the central IT team that manages GitHub as a Service. As long as SSO is configured at the enterprise level, only EDU community members will be able to join an organization, and enterprise admins can still remove inactive members from the organization.|
 
       <br>
       </details>
@@ -125,7 +125,7 @@ Managing GitHub as a Service will require implementing the following steps or so
 
   - **Best Practices**
 
-    - Many EDUs use their ticketing system to approve and track requests.
+    - Many EDUs use a ticket system such as ServiceNow to approve and track requests.
 
   <br>
 </details>
@@ -139,7 +139,7 @@ Managing GitHub as a Service will require implementing the following steps or so
     <br>
 
     - **Go to:**
-      - _Enterprise &rarr; Organizations &rarr; New Organization (button upper left)_
+      - _Enterprise &rarr; Organizations &rarr; New Organization (upper left)_
     - **Note:** Creating an organizatin must be done via the UI.
     
     <br>
@@ -181,12 +181,12 @@ Managing GitHub as a Service will require implementing the following steps or so
 
       |Feature|Policy|Recommended Setting|Location|Notes|
       |-------|------|-------------------|--------|-----|
-      |Actions|Enablement|Enable for Specific Organizations|_Enterprise &rarr; Policies &rarr; Actions (top of page just under Policies heading)_|Enabling for specific organizations allows you to set payment methods and spending limits for those organizations that are prepared to pay for Actions usage. All other organizations will not have access to Actions. Alternatively, enable Actions for all organizations and set spending limits to $0. If spending limits are not set, and the organization uses Actions, Actions usage will be billed to the enterprise.|
+      |Actions|Enablement|Enable for Specific Organizations|_Enterprise &rarr; Policies &rarr; Actions (top of page just under the Policies heading)_|Enabling for specific organizations allows you to set payment methods and spending limits for organizations that are prepared to pay for Actions usage. All other organizations will not have access to Actions. Alternatively, enable Actions for all organizations and set spending limits to $0. If spending limits are not set, and the organization uses Actions, Actions usage will be billed to the enterprise.|
       |Actions|Workflow Permissions|Read and write permissions.|_Enterprise &rarr; Policies &rarr; Actions (scroll to the very bottom of the page)_|Since enterprise policies override organization policies, this should be set to read and write, to ensure that those organizations can use the [GITHUB_TOKEN](https://docs.github.com/en/enterprise-cloud@latest/actions/security-for-github-actions/security-guides/automatic-token-authentication) in their Actions workflows.|
       |Advanced Security|GitHub Advanced Security Availability|Allow for Selected Organizations|_Enterprise &rarr; Policies &rarr; Code Security (scroll all the way to very bottom of the page)_|Allowing for specific organizations allows you to pay for only those organizations that should have GitHub Advanced Security. **Note:** GitHub Advanced Security will be billed to the enterprise.|
-      |GitHub Copilot|Copilot Enablement|Allow for Specific Organizations|_Enterprise &rarr; Policies &rarr; Copilot (mid page)_|Allowing for specific organizations allows you to set payment methods and spending limits for those organizations that are prepared to pay for GitHub Copilot Business Licenses. All other organizations will not have access to Copilot Business licenses. Alternatively, enable Copilot for all organizations and set spending limits to $0. If spending limits are not set, and the organization uses Copilot Business, Copilot usage will be billed to the enterprise. **Note:** Copilot Individual licenses are free to individuals with a confirmed `.edu` email address via their personal GitHub accounts.|
-      |GitHub Copilot|Suggestions Matching Public Code (Duplication Detection Filter)|Blocked|_Enterprise &rarr; Policies &rarr; Copilot &rarr; Policies (tab toward the top of page) &rarr; Suggestions Matching Public Code (scroll down)_|Set this at the enterprise level, as it's required by some clauses in the GitHub and Microsoft contracts for GitHub Enterprise Cloud using GitHub Copilot Business licenses.|
-      |Codespaces|Codespaces Enablement|Allow for Specific Oganizations|_Enterprise &rarr; Policies &rarr; Codespaces_|Allowing for specific organzations allows you to set payment methods and spending limits for those organizations that are prepared to pay for Codespaces.|
+      |GitHub Copilot|Copilot Enablement|Allow for Specific Organizations|_Enterprise &rarr; Policies &rarr; Copilot (mid page)_|Allowing for specific organizations allows you to set payment methods and spending limits for organizations that are prepared to pay for GitHub Copilot Business Licenses. All other organizations will not have access to Copilot Business licenses. Alternatively, enable Copilot for all organizations and set spending limits to $0. If spending limits are not set, and the organization uses Copilot Business, Copilot usage will be billed to the enterprise. **Note:** Copilot Pro licenses are free to verified teachers and students via their personal GitHub accounts. Reach out to your GitHub rep to learn more about [Copilot license types](https://github.com/features/copilot/plans).|
+      |GitHub Copilot|Suggestions Matching Public Code (Duplication Detection Filter)|Blocked|_Enterprise &rarr; Policies &rarr; Copilot &rarr; Policies (tab toward the top of page) &rarr; Suggestions Matching Public Code (scroll down)_|Set this at the enterprise level for IP protection.|
+      |Codespaces|Codespaces Enablement|Allow for Specific Oganizations|_Enterprise &rarr; Policies &rarr; Codespaces_|Allowing for specific organzations allows you to set payment methods and spending limits for organizations that are prepared to pay for Codespaces.|
       |Other Policies||No Policy|_Enterprise &rarr; Policies_ AND _Enterprise &rarr; Settings_|Setting "No policy" allows organization admins to set the policies for their organization, giving them maximum flexibility. **Note:** Please review all other policies and settings to ensure 'No Policy' is appropriate for your EDU community.|
 
       **Notes:**

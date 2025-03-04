@@ -5,7 +5,7 @@ An intro to the Enterprise account, Organizations, Repositories, Teams, and Clas
 
 ### Enterprise Account
 
-An enterprise account provides a single point of visibility, management, and enforcement of policies and settings for your institutions's GitHub presence.
+The enterprise account provides a single point of visibility, management, and enforcement of policies and settings for your institutions's GitHub presence.
 
 - <details>
   <summary>Overview</summary>
@@ -19,6 +19,11 @@ An enterprise account provides a single point of visibility, management, and enf
   <br>
 
   - <img src="images/enterprise_overview.png" alt="enterprise-structure" style="width:50%;">
+
+  <br>
+
+  - **GitHub Docs:**
+    - [GitHub Enterprise Cloud](https://docs.github.com/en/enterprise-cloud@latest/admin/overview)
 
   <br>
   </details>
@@ -52,12 +57,17 @@ An organization is where a group of people, such as an IT team, department, clas
   - Each organization has it's own repositories and teams.
   - Organizations can have a few to a few thousand repositories.
   - Organizations can have many teams.
-  - Repository access within an organization is limited via individual user permissions or Teams.
+  - Repository access within an organization is limited via individual user or teams permissions.
   - Organizations can also have classrooms, where professors, TAs, and students interact.
  
   <br>
 
   - <img src="images/organization_overview.png" alt="organization-structure" style="width:50%;">
+
+  <br>
+
+  - **GitHub Docs:**
+    - [GitHub Organizations](https://docs.github.com/en/enterprise-cloud@latest/organizations/collaborating-with-groups-in-organizations)
 
   <br>
   </details>
@@ -101,6 +111,11 @@ A repository is where people collaborate on code.
   - Repositories can also be categorized with custom properties for easy filtering by property.
   - Repository access is managed via GitHub Teams (see below).
   - Rulesets control how users interact with repository branches and tags.
+ 
+  <br>
+
+  - **GitHub Docs:**
+    - [Repositories](https://docs.github.com/en/enterprise-cloud@latest/repositories/creating-and-managing-repositories)
 
   <br>
   </details>
@@ -134,6 +149,11 @@ A team is a group of organization members with role based access to organization
 
   - Teams are used to control repository and organization access permissions.
   - Teams are used for communication within GitHub (e.g., notifying a team that a particular PR needs attention).
+ 
+  <br>
+
+  - **GitHub Docs:**
+    - [Teams](https://docs.github.com/en/enterprise-cloud@latest/organizations/organizing-members-into-teams)
 
   <br>
   </details>
@@ -162,10 +182,14 @@ A classroom is a place where teachers, TAs, and students interact on GitHub duri
 
   - Organizations can have one or many Classrooms.
   - Classrooms are used to assign and grade student work.
+ 
+  <br>
+
+  - **GitHub Docs:**
+    - [GitHub Classroom](https://docs.github.com/en/education/manage-coursework-with-github-classroom)
 
   <br>
   </details>
-
 - <details>
   <summary>What's in a Classroom?</summary>
   <br>
