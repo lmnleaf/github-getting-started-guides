@@ -1,6 +1,6 @@
 # Get Started: GitHub Enterprise for EDUs
 
-[Quickstart: GitHub Enterprise Setup](https://github.com/lmnleaf/github-getting-started-guides/blob/main/ghec/EDUs/edu-best-practices.md)
+[Quickstart: GitHub Enterprise Setup](https://github.com/lmnleaf/github-getting-started-guides/blob/main/ghec/EDUs/edu-get-started.md)
 - Steps to set up your GitHub Enterprise account.
 
 [Overview: What's in a GitHub Enterprise?](https://github.com/lmnleaf/github-getting-started-guides/blob/main/ghec/EDUs/edu-enterprise-overview.md)
