@@ -71,25 +71,18 @@
 </details>
 
 <details>
-  <summary>Step 3: Set Copilot Policies at the Enterprise or Organization Level</summary>
+  <summary>Step 3: Set Copilot Policies at the Enterprise Level</summary>
   <br>
 
-  - **Info:** Copilot policies can be configured at the enterprise or organization level. Copilot policies determine which features are available to users and whether matches to public code will be blocked.
+  - **Info:** Copilot policies can be configured at the enterprise level. Copilot policies determine which features are available to users.
   - **Go to:**
     - _Enterprise &rarr; Polices (left sidebar) &rarr; Policies (tab toward the top, under the Copilot heading)_
-    - _Organization &rarr; Settings (tab at the top) &rarr; Copilot (left sidebar) &rarr; Policies_
    
   # <Line>
 
   - **GitHub Docs:**
     - **Enterprise Level Enforcement**
-      - [Enforcing an Enterprise Policy for Matches to Public Code](https://docs.github.com/en/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-policies-for-github-copilot-in-your-enterprise#enforcing-a-policy-to-manage-the-use-of-github-copilot-suggestions-that-match-public-code)
-      - [Enforcing an Enterprise Policy for Copilot Access in GitHub.com](https://docs.github.com/en/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-policies-for-github-copilot-in-your-enterprise#enforcing-a-policy-to-manage-the-use-of-github-copilot-features-on-githubcom)
-      - [Enforcing an Enterprise Policy for Copilot Chat in the IDE](https://docs.github.com/en/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-policies-for-github-copilot-in-your-enterprise#enforcing-a-policy-to-manage-the-use-of-github-copilot-chat-in-ides)
-      - [Enforcing an Enterprise Policy for Copilot in the CLI](https://docs.github.com/en/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-policies-for-github-copilot-in-your-enterprise#enforcing-a-policy-to-manage-the-use-of-github-copilot-in-the-cli)
-    - **Organization Level Enforcement**
-      - [Enforcing an Organization Policy for Matches to Public Code](https://docs.github.com/en/enterprise-cloud@latest/copilot/managing-github-copilot-in-your-organization/managing-policies-and-features-for-copilot-in-your-organization#configuring-suggestion-matching-policies-for-github-copilot-in-your-organization)
-      - [Enforcing an Organization Policy for Copilot Access in GitHub.com, Chat in the IDE, and Copilot in the CLI](https://docs.github.com/en/enterprise-cloud@latest/copilot/managing-github-copilot-in-your-organization/managing-policies-and-features-for-copilot-in-your-organization#enabling-features-of-github-copilot-in-your-organization)
+      - [Managing Policies and Features for Copilot in Your Enterprise](https://docs.github.com/en/enterprise-cloud@latest/copilot/managing-copilot/managing-copilot-for-your-enterprise/managing-policies-and-features-for-copilot-in-your-enterprise)
 
   <br>
 </details>
@@ -117,11 +110,13 @@
 
   - **GitHub Docs:**
     - [Configuring Copilot in Your IDE](https://docs.github.com/en/enterprise-cloud@latest/copilot/configuring-github-copilot/configuring-github-copilot-in-your-environment)
+    - [Changing the AI Model for Copilot](https://docs.github.com/en/enterprise-cloud@latest/copilot/using-github-copilot/ai-models/changing-the-ai-model-for-copilot-chat?tool=vscode)
+    - [Copilot Agents](https://docs.github.com/en/enterprise-cloud@latest/copilot/building-copilot-extensions/building-a-copilot-agent-for-your-copilot-extension/about-copilot-agents)
+    - 
 
   - **Other Resources:**
-    - [Tips for Prompting Copilot](https://github.blog/2023-06-20-how-to-write-better-prompts-for-github-copilot/)
-    - [GitHub Copilot Tips & Tricks](https://www.youtube.com/watch?v=1qs6QKk0DVc) (video resource)
-    - [Beginners Guide to Prompt Engineering](https://dev.to/github/a-beginners-guide-to-prompt-engineering-with-github-copilot-3ibp)
+    - [GitHub Copilot Fridays](https://github.registration.goldcast.io/series/ff0939de-f20a-4395-80ff-4bc606e356fd)
+    - [GitHub Copilot Training Modules](https://learn.microsoft.com/en-us/training/browse/?terms=GitHub%20Copilot)(from Microsoft Learn)
 
   <br>
 </details>
@@ -182,7 +177,7 @@
       - Review usage data to get a sense of who is using Copilot and how it is impacting your business.
     - GitHub Docs:
       - [Copilot Usage Data in the UI](https://docs.github.com/en/enterprise-cloud@latest/copilot/managing-github-copilot-in-your-organization/managing-access-for-copilot-in-your-organization#reviewing-usage-data-for-github-copilot-in-your-organization)
-      - [Copilot Usage Data in the API](https://docs.github.com/en/enterprise-cloud@latest/rest/copilot/copilot-user-management?apiVersion=2022-11-28#list-all-copilot-seat-assignments-for-an-organization)
+      - [Copilot Metrics in the API](https://docs.github.com/en/enterprise-cloud@latest/rest/copilot/copilot-metrics?apiVersion=2022-11-28)
 
     <br>
     </details>
