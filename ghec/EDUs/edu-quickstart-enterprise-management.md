@@ -312,7 +312,8 @@ Managing GitHub as a Service will require implementing the following steps or so
      
   - Remove Inactive Members from Organizations
     - **To remove inactive members from organizations via the API, see these docs:**
-      - [Export a List of Members](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-membership-in-your-organization/exporting-member-information-for-your-organization)
+      - [Export a List of Organization Members](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-membership-in-your-organization/exporting-member-information-for-your-organization)
+      - [Export Dormant Enterprise Users](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-accounts-and-repositories/managing-users-in-your-enterprise/managing-dormant-users#downloading-the-dormant-users-report-from-your-enterprise-account)
       - [Remove an Organization Member](https://docs.github.com/en/enterprise-cloud@latest/rest/orgs/members?apiVersion=2022-11-28#remove-an-organization-member)
 
   # <Line>
