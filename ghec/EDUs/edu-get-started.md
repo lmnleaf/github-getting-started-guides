@@ -8,7 +8,7 @@
 - Includes info about the Enterprise, Organizations, Repos, Teams, and Classrooms.
 
 [Quickstart: GitHub Enterprise for EDUs](https://github.com/lmnleaf/github-getting-started-guides/blob/main/ghec/EDUs/edu-quickstart-enterprise-management.md)
-- Info about and steps for managing GitHub as a service for your EDU community.
+- Info about and steps for managing GitHub for your EDU community.
 
 [GitHub Enterprise: Best Practices for EDUs](https://github.com/lmnleaf/github-getting-started-guides/blob/main/ghec/EDUs/edu-best-practices.md)
 - List of best practices for GitHub Enterprise management for EDUs.
