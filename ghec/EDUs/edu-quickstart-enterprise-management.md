@@ -1,10 +1,10 @@
-# Quickstart: GitHub as a Service
+# Quickstart: GitHub Enterprise for EDUs
 
-A guide to managing GitHub as a Service for your EDU community.
+A guide to managing GitHub for your EDU community.
 
 ----
 
-### Intro to GitHub as a Service
+### Intro to Managing GitHub Enterprise for EDUs
 
 GitHub is a service that you'll provide to your educational community via your GitHub Enterprise account.
 
@@ -24,7 +24,7 @@ GitHub is a service that you'll provide to your educational community via your G
 </details>
 
 <details>
-  <summary>Benefits of Providing GitHub as a Service</summary>
+  <summary>Benefits of Providing GitHub Enterprise for Your EDU Community</summary>
   <br>
   
   - Ensure all members of a GitHub organization belong to the EDU community.
@@ -36,12 +36,12 @@ GitHub is a service that you'll provide to your educational community via your G
 
 ----
 
-### What's involved in managing GitHub as a service?
+### What's involved in managing GitHub Enterprise for an EDU community?
 
-With GitHub as a Service, a central IT team accepts and fulfills requests for GitHub organizations.
+With GitHub Enterprise for EDUs, a central IT team accepts and fulfills requests from their EDU community for GitHub organizations.
 
 <details>
-  <summary>What will my team need to do to manage GitHub as a service?</summary>
+  <summary>What will my team need to do to manage GitHub for an EDU community?</summary>
   <br>
 
   - Develop and maintain a process for accepting requests.
@@ -71,9 +71,9 @@ With GitHub as a Service, a central IT team accepts and fulfills requests for Gi
 
 ----
 
-## Quickstart: Managing GitHub as a Service
+## Quickstart: Managing GitHub Enterprise for EDUs
 
-Managing GitHub as a Service will require implementing the following steps or something similar. The drop downs below include information about each step as well as considerations and best practices for implementation.
+Managing GitHub Enterprise for an EDU community will require implementing the following steps or something similar. Each drop down below includes information about each step as well as considerations and best practices for implementation.
 
 <details>
   <summary>Step 1: Accept Requests for Organizations</summary>
@@ -107,7 +107,7 @@ Managing GitHub as a Service will require implementing the following steps or so
       |Name & Email of Person Who Will Maintain the Server Instance (if one is needed)|Some EDUs have a central team that helps set up and maintain server instances when needed. Other EDUs provide the server license (available in the GitHub Enterprise) but leave it up to the research group to set up their own server instance.
       |Additional Organization Admin Emails|This is not required to create the organization, but best practice is to have multiple organization admins. The person who creates the organization will be added automatically as an organization admin.
       |Additional Organization Admin GitHub Handles|This is not required to create the organization, but best practice is to have multiple organization admins. The person who creates the organization will be added automatically as an organization admin.|
-      |Member Emails|Some EDUs do not collect a list of organization members and instead allow organization admins to manage membership. This can be easier on the central IT team that manages GitHub as a Service. As long as SSO is configured at the enterprise level, only EDU community members will be able to join an organization, and enterprise admins can still remove inactive members from the organization.|
+      |Member Emails|Some EDUs do not collect a list of organization members and instead allow organization admins to manage membership. This can be easier on the central IT team that manages the GitHub Enterprise. As long as SSO is configured at the enterprise level, only EDU community members will be able to join an organization, and enterprise admins can still remove inactive members from the organization.|
 
       <br>
       </details>
