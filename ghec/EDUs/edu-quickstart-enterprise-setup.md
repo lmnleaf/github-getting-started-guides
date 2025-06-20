@@ -185,12 +185,12 @@
 </details>
 
 <details>
-  <summary>Step 10: Implement GitHub as a Service for Your EDU Community </summary>
+  <summary>Step 10: Implement GitHub Enterprise for Your EDU Community </summary>
   <br>
 
   - **Info:**
     - Review the rest of this guide to learn more about managing organizations and members within your GitHub Enterprise account:
-  - [Quickstart: GitHub as a Service](https://github.com/lmnleaf/github-getting-started-guides/blob/main/ghec/EDUs/edu-quickstart-enterprise-management.md)
+  - [Quickstart: GitHub Enterprise for EDUs](https://github.com/lmnleaf/github-getting-started-guides/blob/main/ghec/EDUs/edu-quickstart-enterprise-management.md)
   - [Overview: What's in a GitHub Enterprise?](https://github.com/lmnleaf/github-getting-started-guides/blob/main/ghec/EDUs/edu-enterprise-overview.md)
   - [GitHub Enterprise: Best Practices for EDUs](https://github.com/lmnleaf/github-getting-started-guides/blob/main/ghec/EDUs/edu-best-practices.md)
 
