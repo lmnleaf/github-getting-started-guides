@@ -28,38 +28,7 @@ Most GitHub customers are on a standard GitHub enterprise.
     - User deprovisioning automatically removes the GitHub user from the organization.
       - The user will no longer have access the organization's resources, and their GitHub identity will no longer be linked to the IdP identity.
   - Note: For standard enterprises, best practice is to set up SSO at the organization level as SCIM is only available at that level. In addition, configuring SSO at the organization level allows companies with multiple business entities/subsidiaries to configure SSO with different IdPs on different organizations.
-
-# <Line>
-
-- <details>
-  <summary>Analogy: GitHub as Coworking Space</summary>
-  <br>
-
-  GitHub standard enterprises are somewhat analogous to a physical coworking space.
-
-  - Imagine a coworking space in a multi-level building:
-    - First Floor
-      - The first floor is for collaboration:
-        - Although anyone can look in the windows when walking by the building, only members can actually get in.
-        - To access the first floor, you _must_ be a member of the coworking space - you must have the door code and check in at the front desk.
-    - Upper Floors
-      - The upper floors house individual companies.
-        - People walking by can't see in, and each floor is only accessible to employees of the particular company on that floor.
-        - To access an upper floor, an employee must have the elevator code for that floor.
-
-  <br>
-
-  - Now think about GitHub:
-    - Everyone with a personal account is part of the GitHub community.
-      - All members of the GitHub community must log in with a username and password (and eventually with 2FA).
-      - Personal accounts and public repositories are analogous to the first floor of the coworking space.
-    - But only some people can access enterprise resources, i.e., organizations & private repositories.
-      - Access to enterprise resources (both read and write) is invite only AND
-      - Access to enterprise resources that are protected by SSO requires an additional login.
-      - Organizations are analogous to the upper floors of the coworking space.
-
-  <br>
-  </details>
+  - GitHub Docs: [Managing SSO for an Organization with GitHub Enterprise](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-saml-single-sign-on-for-your-organization)
 
   <br>
 </details>
@@ -82,11 +51,12 @@ Enterprise Managed User (EMU) enterprise are designed for companies with:
     - EMU enterprises cannot interact with public facing resources. For example, they cannot create or fork public repositories. 
   - All members of an EMU enterprise must have an identity in the same IdP tenant.
     - There are some cases where this is not ideal. For example, when one company acquires another and both companies use separate IdPs for SSO.
-  - Finally, with EMU, the commits your devs make at work will not add to their GitHub contribution graphs. The contribution graph never shows details about commits made to private repositories, but it does show that a developer committed on any given day. Some developers want their contributions to show because it is part of how they market themselves to the larger development community and to future employers.
-  - Existing GitHub Customers: Moving from a GitHub organization or standard GitHub enterprise to an EMU enterprise requires a migration.
+  - Finally, with EMU, the commits your devs make at work may not be added to their GitHub contribution graphs. The contribution graph never shows details about commits made to private repositories, but it does show that a developer committed on any given day. Some developers want their contributions to show because it is part of how they market themselves to the larger development community and to future employers.
+  - Note: For existing GitHub customers, moving from a GitHub organization or standard GitHub enterprise to an EMU enterprise requires a migration.
     - There are two options for the migration:
       - a self-serve migration using [GitHub Enterprise Importer](https://github.com/github/gh-gei).
       - an [Expert Services](https://github.com/services/) engagement.
+- GitHub Docs: [Limitations and Abilities of Enterprise Managed User Accounts](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-iam/understanding-iam-for-enterprises/abilities-and-restrictions-of-managed-user-accounts)
     
   <br>
 </details>
@@ -106,6 +76,7 @@ Enterprise Managed User (EMU) enterprise are designed for companies with:
     - User deprovisioning deletes the account.
       - The user will no longer have access to a work related GitHub account or to the organization's resources.
   - There are some restrictions on EMU enterprises that do not apply to standard enterprises (see next dropdown).
+  - GitHub Docs: [Managing SSO with Enterprise Managed Users](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-iam/configuring-authentication-for-enterprise-managed-users)
 
   <br>
 </details>
