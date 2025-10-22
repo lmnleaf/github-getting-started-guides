@@ -17,6 +17,7 @@ The enterprise account provides a single point of visibility, management, and en
 - Security insights for customers using Advanced Security
 - GitHub Connect (connects Server instances to Cloud instances for customers using GitHub Enterprise Server in addition to GitHub Enterprise Cloud)
 - Audit Log
+- Billing & Licensing
 - GitHub Compliance documentation
   
 <br>
@@ -192,6 +193,33 @@ The enterprise account provides a single point of visibility, management, and en
 
   <br>
   </details>
+- <details>
+  <summary>Assign organization roles.</summary>
+  <br>
+
+  - <details>
+    <summary>Why assign organization roles?</summary>
+    <br>
+  
+    - Some people will need access to all settings & policies on the organization. This team should be assigned the organization admin role.
+    - Other people will only need access to some settings & policies, for example to manage Actions, but not Security settings. These teams or individuals can be assigned other organization roles or custom organization roles.
+    <br>
+    </details>
+
+    <br>
+
+    - **To assign organization roles, go to:**
+      - _Organization &rarr; Settings &rarr; Organization roles (left sidebar) &rarr; Role assignments (top of the page)_
+     
+    <br>
+
+    - **GitHub Docs:**
+      - [Roles in an Organization](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization)
+      - [Assign Roles in an Organization](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-peoples-access-to-your-organization-with-roles/using-organization-roles)
+      - [Custom Organization Roles](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-peoples-access-to-your-organization-with-roles/about-custom-organization-roles)
+
+  <br>
+  </details>
 
 ----
 
@@ -222,8 +250,8 @@ The enterprise account provides a single point of visibility, management, and en
   - Issues & Projects (project management)
   - Wikis
   - Actions (CI/CD)
-  - GitHub Advanced Security tooling
-  - Repo insights
+  - Security Alerts with GitHub Advanced Security or Dependabot
+  - Repo insights including SBOMs when Dependency Graph is Enabled
 
   <br>
   </details>
@@ -286,8 +314,34 @@ The enterprise account provides a single point of visibility, management, and en
   - **GitHub Docs:**
     - [Managing Custom Properties](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization)
     - [Create Custom Properties](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization#adding-custom-properties)
-    - [Setting Custom Properties]([https://docs.github.com/en/enterprise-cloud@latest/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/creating-rulesets-for-a-repository#creating-a-branch-or-tag-ruleset](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization#setting-values-for-repositories-in-your-organization)
+    - [Set Custom Properties](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization#setting-values-for-repositories-in-your-organization)
 
+  <br>
+  </details>
+
+- <details>
+  <summary>Assign repository roles to teams or individuals.</summary>
+
+  - <details>
+    <summary>Why assign repository roles?</summary>
+    <br>
+  
+    - Different people will need different levels of access to the repository. For example, at minimum, developers will need write access, but team leads might need additional access to do things like configure branch protections or some security tooling.
+    - Individuals or Teams can be assigned default or custom repository roles.
+    <br>
+    </details>
+
+    <br>
+
+    - **To assign repository roles, go to:**
+      - _Organization &rarr; Teams or People (tabs at the top) &rarr; Select a Team &rarr; Repositories (tab at the top) &rarr; Select Repository & Assign Role_
+     
+    <br>
+
+    - **GitHub Docs:**
+      - [Repository Roles](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization)
+      - [Custom Repository Roles](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/about-custom-repository-roles)
+      - [Managing Teams & People with Access to Your Repositories](https://docs.github.com/en/enterprise-cloud@latest/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-teams-and-people-with-access-to-your-repository)
 
   <br>
   </details>
