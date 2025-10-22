@@ -100,6 +100,7 @@
 
   - **GitHub Docs:**
     - [Assigning Licenses at the Enterprise Level](https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-access/grant-access#assigning-licenses)
+    - [Creating Enterprise Teams](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-accounts-and-repositories/managing-users-in-your-enterprise/create-enterprise-teams)
     - [Enabling Copilot for Organizations](https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-access/grant-access#enabling-copilot-for-organizations) and [Granting Access to Copilot for Members of Your Organization](https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/administer-copilot/manage-for-organization/manage-access/grant-access)
     - [Set Up Team Synchronization with an IdP Group](https://docs.github.com/en/enterprise-cloud@latest/organizations/organizing-members-into-teams/synchronizing-a-team-with-an-identity-provider-group)
   
@@ -182,17 +183,20 @@
     </details>
 
   - <details>
-    <summary>Review Copilot metrics and usage data.</summary>
+    <summary>Review Copilot metrics and usage data and GitHub's Engineering System Success Playbook.</summary>
     <br>
     
     - _Rationale:_
       - Review usage data to ensure you haven't allocated more licenses than are needed.
       - Review usage data to get a sense of who is using Copilot and how it is impacting your business.
-    - GitHub Docs:
+      - Review GitHub's Engineering System Success Playbook for a 3 step process for driving meaningful and measurable improvements in your Engineering organization.
+    - _Resources_:
       - [Measuring Copilot Adoption Over Time](https://docs.github.com/en/enterprise-cloud@latest/copilot/tutorials/roll-out-at-scale/measure-adoption)
       - [Driving the Downstream Impact of Copilot](https://docs.github.com/en/enterprise-cloud@latest/copilot/tutorials/roll-out-at-scale/drive-downstream-impact)
       - [Copilot Metrics API](https://docs.github.com/en/enterprise-cloud@latest/rest/copilot/copilot-metrics?apiVersion=2022-11-28)
       - [Metrics Data Properties for GitHub Copilot](https://docs.github.com/en/enterprise-cloud@latest/copilot/reference/metrics-data)
+      - [Intro to GitHub's Engineering System Success Framework]( https://resources.github.com/engineering-system-success-playbook/)
+      - [GitHub's Engineering System Success Playbook](https://assets.ctfassets.net/wfutmusr1t3h/59IWCIRvx0KfHbh6B7bv62/d9f55b94ab43fe91e9ed183d73882954/2025-05-28-GitHub-ESSP-Ebook-EZ-Version012.pdf)
 
     <br>
     </details>
