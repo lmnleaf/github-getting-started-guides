@@ -6,7 +6,7 @@
   
   - Ensure there are enough enterprise licenses available to cover any members of the org who aren't already members of the enterprise.
   - **Go to:**
-    - _Enterprise &rarr; People (left sidebar) &rarr; User Licenses Consumed (box at the top under Members heading)_
+    - _Enterprise &rarr; Billing & Licensing (tab at the top) &rarr; Licensing (left sidebar) &rarr; Licensing Enteprrise Cloud (first box)_
 
   # <Line>
 
@@ -27,8 +27,8 @@
   - **Best Practice:** 
     - Although tedious, go through each enterprise policy and setting and compare it to the organization settings.
   - **Go to:**
-    - _Enterprise >  Policies (left sidebar)_ AND _Enterprise > Settings (left sidebar)_ 
-    - _Organization > Settings (tab at the top) > each setting (left sidebar)_
+    - _Enterprise &rarr;  Policies (tab at the top)_ AND _Enterprise &rarr; Settings (tab at the top)_ 
+    - _Organization &rarr; Settings (tab at the top) &rarr; each setting (left sidebar)_
    
   # <Line>
 
@@ -54,8 +54,8 @@
         - Workflow Permissions are permissions for the GITHUB_TOKEN.
         - By default the GITHUB_TOKEN is set to READ ONLY at the enterprise level but many orgs have it set to READ and WRITE.
     - **Go to:**
-      - _Enterprise &rarr; Settings (left sidebar) &rarr; Actions &rarr; Workflow Permissions (bottom of the page)_
-      - _Organization &rarr; Settings (tab at the top) &rarr; General &rarr; Workflow Permissions (bottom of the page)_
+      - _Enterprise &rarr; Policies (tab at the top) &rarr; Actions &rarr; Workflow Permissions (bottom of the page)_
+      - _Organization &rarr; Settings (tab at the top) &rarr; Actions (left side bar) &rarr; General &rarr; Workflow Permissions (bottom of the page)_
      
     <br>
     </details>
@@ -66,9 +66,14 @@
 
     - Configure the Enterprise Copilot policy to allow all orgs access to Copilot OR after bringing the org into the enterprise, configure the Eneterprise Copilot policy to allow the specific org access to Copilot.
     - **Info:**
-      - If the org is using Copilot Business and you do not do this, Copilot access for developers will be disrupted when the org is brought into the Enterprise.
+      - If the org is using Copilot Business or Copilot Enterprise and you do not do this, Copilot access for developers will be disrupted when the org is brought into the Enterprise.
     - **Go to:**
-      - _Enterprise &rarr; Policies &rarr; Copilot &rarr; Manage organization access to GitHub Copilot &rarr; Allow for all organizations OR Allow for specific organizations_
+      - _Enterprise &rarr; Billing & Licensing (tab at the top) &rarr; Licensing (left sidebar) &rarr; scroll to Copilot (box in the middle) &rarr; Manage (button in box) &rarr; Organizations (tab in the middle of page) &rarr; search for organization &rarr; select license type (Business or Enterprise) &rarr; Grant Access_
+     
+    # <Line>
+
+    - **GitHub Docs:**
+      - [Granting User Access to GitHub Copilot in Your Enterprise](https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-access/grant-access), see section [Enabling Copilot for Organizations](https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-access/grant-access#enabling-copilot-for-organizations)
 
     <br>
     </details>
@@ -117,8 +122,8 @@
     
     - **Info:**
       - Org members will lose access to the organization until they login with SSO.
-      - They will be prompted to login with SSO the first time they attempt to access organization resources after the org is moved into the enterprise.
-      - Org members will also need to configure SSH keys and PATs for SSO.
+      - They will be prompted to login with SSO the first time they attempt to access organization resources after the org is moved into the enterprise. **Note:** They must already have an identity in your IdP with access to your GitHub enterprise.
+      - Org members will need to configure SSH keys and PATs for SSO.
      
     # <Line>
 
@@ -139,16 +144,16 @@
 
   - Invite the organization to join the enterprise.
   - **Info:**
-    - When you invite an organization to join the enterprise, an email will be sent to the orgnaization owner(s).
+    - When you invite an organization to join the enterprise, an email will be sent to the organization owner(s).
     - The organization owner will accept the invitation.
     - At that point, the organization will show as pending in the enterprise, so the enterprise admin can give final approval for the org to come into the enterprise.
   - **Got to:**
-    - _Enterprise &rarr; Organizations (left sidebar) &rarr; Invite Organization (button near top) &rarr; search by org name_
+    - _Enterprise &rarr; Organizations (tab at the top) &rarr; Invite Organization (button top right) &rarr; search by org name_
    
   # <Line>
 
   - **GitHub Docs:**
-    - [How to Invite an Organization to Join an Enterprise](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-accounts-and-repositories/managing-organizations-in-your-enterprise/adding-organizations-to-your-enterprise#inviting-an-organization-to-join-your-enterprise-account)
+    - [Adding Organizations to Your Enterprise](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-accounts-and-repositories/managing-organizations-in-your-enterprise/adding-organizations-to-your-enterprise#inviting-an-organization-to-join-your-enterprise-account), see section [Inviting an Existing Organization](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-accounts-and-repositories/managing-organizations-in-your-enterprise/adding-organizations-to-your-enterprise#inviting-an-existing-organization)
 
   <br>
 </details>
