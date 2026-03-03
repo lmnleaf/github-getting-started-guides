@@ -15,52 +15,35 @@
         - Microsoft customers, who have an Azure subscription, can use Cost Centers to bill to unique Azure Subscription IDs per Cost Center. 
 
   - **To set an Enterprise level payment method, go to:**
-    - _Enterprise &rarr; Billing & Licensing (left sidebar) &rarr; Payment Information (left sidebar)_
+    - _Enterprise &rarr; Billing & Licensing (tab at the top) &rarr; Payment Information (left sidebar)_
 
   - **To create a Cost Center and Budget, go to:**
-    - _Enterprise &rarr; Billing & Licensing (left sidebar) &rarr; Cost Centers (left sidebar) &rarr; New cost center_
-      - Add the organization or members. **Note:** Members must be added via the API.
+    - _Enterprise &rarr; Billing & Licensing (left sidebar) &rarr; Cost Centers (left sidebar) &rarr; New Cost Center_
+      - Add the organization or members.
       - Add the Azure Subscription ID.
-    - _Enterprise &rarr; Billing & Licensing (left sidebar) &rarr; Budgets and alerts &rarr; New budget_
+    - _Enterprise &rarr; Billing & Licensing (tab at the top) &rarr; Budgets and Alerts &rarr; New Budget_
       - Add Copilot.
       - Add spending limits and alerts as needed.
 
   # <Line>
   
   - **GitHub Docs:**
-    - [Cost Centers: Charging Business Units](https://docs.github.com/en/enterprise-cloud@latest/billing/using-the-new-billing-platform/charging-business-units)
-    - [Budgets: Preventing Overspending](https://docs.github.com/en/enterprise-cloud@latest/billing/using-the-new-billing-platform/preventing-overspending)
+    - [Cost Centers: Allocate Costs to Business Units](https://docs.github.com/en/enterprise-cloud@latest/billing/using-the-new-billing-platform/charging-business-units)
+    - [Budgets: Controlling Spending for Metered Products](https://docs.github.com/en/enterprise-cloud@latest/billing/using-the-new-billing-platform/preventing-overspending)
     - [Payment Info: Managing Your Payment and Billing Information](https://docs.github.com/en/enterprise-cloud@latest/billing/using-the-new-billing-platform/managing-your-payment-and-billing-information)
-
-  # <Line>
-  
-  - <details>
-      <summary>Previous Billing Platform (will be deprecated 2025 Q1)</summary>
-      <br>
-
-      - **Note:** All enterprises should be migrated to the new billing platform by the end of Q1 2025.
-      - **Info:** If your enterprise is still on the previous billing platform, you will only be able to bill for Copilot licenses at the enterprise level.
-      - **To add billing information, go to:**
-        - _Enterprise &rarr; Settings (left sidebar) &rarr; Billing &rarr; Payment Information (tab under the Billing heading and metered services summary)_
-
-
-      - **GitHub Docs:**
-        - [Adding/Updating Enterprise Account Payment Information (Credit Card or PayPal)](https://docs.github.com/en/enterprise-cloud@latest/billing/managing-your-github-billing-settings/adding-or-editing-a-payment-method)
-        - [Connecting an Azure Subscription to GitHub](https://docs.github.com/en/enterprise-cloud@latest/billing/managing-the-plan-for-your-github-account/connecting-an-azure-subscription)
-
-      <br>
-    </details>
 
   <br>
 </details>
 
 <details>
-  <summary>Step 2: Enable GitHub Copilot at the Enterprise Level</summary>
+  <summary>Step 2: Enable GitHub Copilot for Organizations at the Enterprise Level</summary>
   <br>
 
-  - **Info:** If Copilot licenses will be assigned by organization admins at the organization level, Copilot must be enabled for organizations at the enterprise level first. If you are assigning Copilot licenses at the enterprise level, go to Step 3.
+  - **Info:** Copilot Business licenses can be assigned at the enterprise or organization level. Copilot Enterprise licenses must be assigned at the organization level.
+    - If Copilot licenses will be assigned by organization admins at the organization level, Copilot must be enabled for organizations at the enterprise level first.
+    - If you are assigning Copilot licenses at the enterprise level, go to Step 3.
   - **Go to:**
-    - _Enterprise &rarr; Billing and licensing &rarr; Licensing (left sidebar) &rarr; Copilot (box in middle of page) &rarr; Manage (upper right corner of box) &rarr; Copilot Access (second box) &rarr; "All Organizations" OR "Specific Organizations"_
+    - _Enterprise &rarr; AI Controls (tab at the top) &rarr; Copilot (left sidebar) &rarr; Access Management (box in top section of page) &rarr; Organizations (tab middle of page) &rarr; select organization &rarr; set Copilot license type &rarr; Assign Licenses (button)_
    
   # <Line>
 
@@ -74,9 +57,12 @@
   <summary>Step 3: Set Copilot Policies at the Enterprise Level</summary>
   <br>
 
-  - **Info:** Copilot policies can be configured at the enterprise level. Copilot policies determine which features are available to users.
+  - **Info:** Copilot policies and models can be configured at the enterprise level.
+    - Copilot policies determine which features are available to users.
+    - Copilot models determine which models are available to users.
   - **Go to:**
-    - _Enterprise &rarr; Polices (left sidebar)_
+    - _Enterprise &rarr; AI Controls (tab at the top) &rarr; Copilot (left sidebar) &rarr; Privacy_ AND _Features (middle of the page)_
+    - _Enterprise &rarr; AI Controls (tab at the top) &rarr; Copilot (left sidebar) &rarr; Configure Allowed Models (box in top section of page)_
   # <Line>
 
   - **GitHub Docs:**
@@ -92,9 +78,9 @@
 
   - **Info:** Copilot licenses can be assigned to individual users or teams at the enterprise or organization level. Copilot licenses can also be assigned by uploading a CSV of users.
   - To assign licenses at the **enterprise level**, **go to:**
-    - _Enterprise &rarr; Billing and licensing &rarr; Licensing &rarr; Copilot (box in middle of page) &rarr; Manage (upper right corner of box) &rarr; Users or Enterprise Teams (tabs middle of page)_
+    - _Enterprise &rarr; AI Controls (tab at the top) &rarr; Copilot (left sidebar) &rarr; Access Management (box in top section of page) &rarr; All Members_ or _Enterprise Teams (tabs middle of page)_
   - to assign licenase at the **organization level**, **go to:**
-    - _Organization &rarr; Settings (tab top right) &rarr; Copilot (left sidebar) → Access &rarr; select "Enable for: All members of the organization" OR "Enable for: Selected members"_
+    - _Organization &rarr; Settings (tab top right) &rarr; Copilot (left sidebar) → Access &rarr; select Enable for: All members of the organization_ OR _Enable for: Selected members_
 
   # <Line>
 
@@ -118,11 +104,11 @@
     - [IDE Copilot Chat Cheat Sheet](https://docs.github.com/en/enterprise-cloud@latest/copilot/reference/cheat-sheet)
     - [GitHub Copilot Coding Agent, Code Review, and CLI](https://docs.github.com/en/enterprise-cloud@latest/copilot/concepts/agents)
     - [Prompting and Customizing Copilot](https://docs.github.com/en/enterprise-cloud@latest/copilot/concepts/prompting)
-    - [AI Model Comparison](https://docs.github.com/en/enterprise-cloud@latest/copilot/concepts/auto-model-selection)
+    - [Model Selection](https://docs.github.com/en/enterprise-cloud@latest/copilot/concepts/auto-model-selection)
     - [Copilot Auto Model Selection](https://docs.github.com/en/enterprise-cloud@latest/copilot/concepts/auto-model-selection)
 
   - **Other Resources:**
-    - [GitHub Copilot Fridays](https://github.registration.goldcast.io/series/ff0939de-f20a-4395-80ff-4bc606e356fd)
+    - [GitHub Copilot Fridays]([https://github.registration.goldcast.io/series/ff0939de-f20a-4395-80ff-4bc606e356fd](https://github.registration.goldcast.io/series/ff0939de-f20a-4395-80ff-4bc606e356fd#Text%20Grid%204))
     - [GitHub YouTube Channel](https://www.youtube.com/@GitHub) (regularly updated with new Copilot tips and training videos)
     - [VS Code YouTube Playlist: GitHub Copilot Series for VS Code](https://www.youtube.com/playlist?list=PLj6YeMhvp2S5_hvBl2SE-7YCHYlLQ0bPt)
     - [GitHub Copilot Training Modules](https://learn.microsoft.com/en-us/training/browse/?terms=GitHub%20Copilot)(from Microsoft Learn)
@@ -188,9 +174,10 @@
     
     - _Rationale:_
       - Review usage data to ensure you haven't allocated more licenses than are needed.
-      - Review usage data to get a sense of who is using Copilot and how it is impacting your business.
+      - Review metrics to get a sense of who is using Copilot and how it is impacting your business.
       - Review GitHub's Engineering System Success Playbook for a 3 step process for driving meaningful and measurable improvements in your Engineering organization.
     - _Resources_:
+      - [Copilot Metrics & Dashboards](https://docs.github.com/en/enterprise-cloud@latest/copilot/concepts/copilot-usage-metrics)
       - [Measuring Copilot Adoption Over Time](https://docs.github.com/en/enterprise-cloud@latest/copilot/tutorials/roll-out-at-scale/measure-adoption)
       - [Driving the Downstream Impact of Copilot](https://docs.github.com/en/enterprise-cloud@latest/copilot/tutorials/roll-out-at-scale/drive-downstream-impact)
       - [Copilot Metrics API](https://docs.github.com/en/enterprise-cloud@latest/rest/copilot/copilot-metrics?apiVersion=2022-11-28)
