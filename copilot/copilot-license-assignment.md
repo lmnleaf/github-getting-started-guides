@@ -37,9 +37,12 @@
    
   - **To create an Enterprise Team, go to:**
     - _People &rarr; Enterprise Teams (left sidebar)_
-   
+
+  # <Line>
+  
   - **GitHub Docs:**
     - [Creating Enterprise Teams](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-accounts-and-repositories/managing-users-in-your-enterprise/create-enterprise-teams)
+    - [Managing Enterprise Teams with an Identity Provider Group](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-iam/provisioning-user-accounts-with-scim/managing-team-memberships-with-identity-provider-groups)
 
   <br>
 </details>
@@ -48,7 +51,7 @@
   <summary>Step 3: Create Cost Centers & Budgets</summary>
   <br>
 
-  - **Info:** Cost Centers and Budgets allow you to limit included AI credit usage and overages for the enterprise, enterprise teams, and individual users.
+  - **Info:** Cost Centers and Budgets allow you to limit included AI credit usage and overages for the enterprise, enterprise teams, and individual users. **Note:** For more information about cost centers and budgets, and how they impact individual user spend and overages for a cost center and an enterprise as a whole, please refer to the docs or reach out to your GitHub Account Executive.
 
   - **To create a Cost Center and Budget, go to:**
     - _Enterprise &rarr; Billing & Licensing (left sidebar) &rarr; Cost Centers (left sidebar) &rarr; New Cost Center_
@@ -74,10 +77,12 @@
   <summary>Step 4: Assign Copilot Licenses to Enterprise Teams</summary>
   <br>
 
-  - **Info:** When an enterprise team is assigned a Copilot license, every member in the team will have a Copilot license.
+  - **Info:** When an enterprise team is assigned a Copilot license, every member in the team will receive a Copilot license. When new members are added to the enterprise team, either in the GitHub UI or via an IdP group, they will receive a Copilot license, and the same model policies and budgets that apply to the team will apply to the new member.
 
   - **To assign Copilot licenses to Enterprise Teams, go to:**
     - _Enterprise &rarr; AI Controls (tab at the top) &rarr; Copilot (left sidebar) &rarr; Access Management (box near the top) &rarr; Enterprise Teams (tab in the middle of the page)_
+
+  # <Line>
 
   - **GitHub Docs:**
     - [Granting Users Access to GitHub Copilot in Your Enterprise](https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-access/grant-access)
@@ -93,6 +98,7 @@
   - **Info:** Copilot policies and models can be configured at the enterprise level. Copilot models can be configured for the enterprise and for enterprise teams.
     - Copilot policies determine which features are available to users.
     - Copilot models determine which models are available to users.
+  
   - **To configure Copilot policies and models, go to:**
     - _Enterprise &rarr; AI Controls (tab at the top) &rarr; Copilot (left sidebar) &rarr; Features & Clients (middle of the page)_
     - _Enterprise &rarr; AI Controls (tab at the top) &rarr; Copilot (left sidebar) &rarr; Models (box in top section of page)_
